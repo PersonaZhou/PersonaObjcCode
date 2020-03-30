@@ -3,19 +3,87 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB4419D3E6175BE869E06BF1 /* Pods_PersonaObjcCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8824EE6A9AA4D5E828E8547 /* Pods_PersonaObjcCode.framework */; };
 		C15FE8C5242FAF6800A851F1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FE8C4242FAF6800A851F1 /* AppDelegate.m */; };
-		C15FE8C8242FAF6800A851F1 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FE8C7242FAF6800A851F1 /* SceneDelegate.m */; };
-		C15FE8CB242FAF6800A851F1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FE8CA242FAF6800A851F1 /* ViewController.m */; };
 		C15FE8CE242FAF6800A851F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C15FE8CC242FAF6800A851F1 /* Main.storyboard */; };
 		C15FE8D0242FAF6B00A851F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C15FE8CF242FAF6B00A851F1 /* Assets.xcassets */; };
 		C15FE8D3242FAF6B00A851F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C15FE8D1242FAF6B00A851F1 /* LaunchScreen.storyboard */; };
 		C15FE8D6242FAF6B00A851F1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FE8D5242FAF6B00A851F1 /* main.m */; };
 		C15FE8E0242FAF6B00A851F1 /* PersonaObjcCodeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FE8DF242FAF6B00A851F1 /* PersonaObjcCodeTests.m */; };
 		C15FE8EB242FAF6B00A851F1 /* PersonaObjcCodeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FE8EA242FAF6B00A851F1 /* PersonaObjcCodeUITests.m */; };
+		C15FE98B242FB02900A851F1 /* image_loading.gif in Resources */ = {isa = PBXBuildFile; fileRef = C15FE8F9242FB02700A851F1 /* image_loading.gif */; };
+		C15FE98C242FB02900A851F1 /* PERDemoViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FE8FC242FB02800A851F1 /* PERDemoViewModel.m */; };
+		C15FE98D242FB02900A851F1 /* PERDemoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FE8FF242FB02800A851F1 /* PERDemoModel.m */; };
+		C15FE98E242FB02900A851F1 /* PERDemoViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FE903242FB02800A851F1 /* PERDemoViewCell.m */; };
+		C15FE98F242FB02900A851F1 /* PERDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FE905242FB02800A851F1 /* PERDemoViewController.m */; };
+		C15FE990242FB02900A851F1 /* PERHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FE908242FB02800A851F1 /* PERHomeViewController.m */; };
+		C15FE991242FB02900A851F1 /* PERHomeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FE909242FB02800A851F1 /* PERHomeViewModel.m */; };
+		C15FE992242FB02900A851F1 /* PERHomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FE90B242FB02800A851F1 /* PERHomeModel.m */; };
+		C15FE993242FB02900A851F1 /* PERHomeViewBannerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FE90E242FB02800A851F1 /* PERHomeViewBannerCell.m */; };
+		C15FE994242FB02900A851F1 /* PERHomeViewListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FE90F242FB02800A851F1 /* PERHomeViewListCell.m */; };
+		C15FE995242FB02900A851F1 /* PERYogaViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FE915242FB02800A851F1 /* PERYogaViewModel.m */; };
+		C15FE996242FB02900A851F1 /* PERYogaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FE916242FB02800A851F1 /* PERYogaViewController.m */; };
+		C15FE997242FB02900A851F1 /* PERDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FE919242FB02800A851F1 /* PERDetailViewController.m */; };
+		C15FE998242FB02900A851F1 /* PERDetailViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FE91C242FB02800A851F1 /* PERDetailViewModel.m */; };
+		C15FE999242FB02900A851F1 /* PERMineViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FE91F242FB02800A851F1 /* PERMineViewModel.m */; };
+		C15FE99A242FB02900A851F1 /* PERMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FE920242FB02800A851F1 /* PERMineViewController.m */; };
+		C15FE99B242FB02900A851F1 /* PERUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FE923242FB02800A851F1 /* PERUserModel.m */; };
+		C15FE99C242FB02900A851F1 /* PERTextureViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FE926242FB02800A851F1 /* PERTextureViewModel.m */; };
+		C15FE99D242FB02900A851F1 /* PERTextureModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FE92A242FB02800A851F1 /* PERTextureModel.m */; };
+		C15FE99E242FB02900A851F1 /* PERTextureReplyCellNode.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FE92C242FB02800A851F1 /* PERTextureReplyCellNode.m */; };
+		C15FE99F242FB02900A851F1 /* PERTextureCommentNode.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FE931242FB02800A851F1 /* PERTextureCommentNode.m */; };
+		C15FE9A0242FB02900A851F1 /* PERTextureMutilImageNode.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FE933242FB02800A851F1 /* PERTextureMutilImageNode.m */; };
+		C15FE9A1242FB02900A851F1 /* PERTextureCellNode.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FE934242FB02800A851F1 /* PERTextureCellNode.m */; };
+		C15FE9A2242FB02900A851F1 /* PERTextureMutilImageCellNode.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FE935242FB02800A851F1 /* PERTextureMutilImageCellNode.m */; };
+		C15FE9A3242FB02900A851F1 /* PERTextureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FE936242FB02800A851F1 /* PERTextureViewController.m */; };
+		C15FE9A4242FB02900A851F1 /* PERCustomTableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FE93A242FB02800A851F1 /* PERCustomTableViewModel.m */; };
+		C15FE9A5242FB02900A851F1 /* PERCustomTableBannerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FE93C242FB02800A851F1 /* PERCustomTableBannerModel.m */; };
+		C15FE9A6242FB02900A851F1 /* PERCustomListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FE941242FB02800A851F1 /* PERCustomListCell.m */; };
+		C15FE9A7242FB02900A851F1 /* PERCustomBannerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FE942242FB02800A851F1 /* PERCustomBannerCell.m */; };
+		C15FE9A8242FB02900A851F1 /* PERCustomTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FE944242FB02800A851F1 /* PERCustomTableViewController.m */; };
+		C15FE9A9242FB02900A851F1 /* PERLoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FE946242FB02800A851F1 /* PERLoginViewModel.m */; };
+		C15FE9AA242FB02900A851F1 /* PERLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FE947242FB02800A851F1 /* PERLoginViewController.m */; };
+		C15FE9AB242FB02900A851F1 /* PERPersistentDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FE94D242FB02800A851F1 /* PERPersistentDataManager.m */; };
+		C15FE9AC242FB02900A851F1 /* NSString+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FE951242FB02800A851F1 /* NSString+Utility.m */; };
+		C15FE9AD242FB02900A851F1 /* UIImage+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FE952242FB02800A851F1 /* UIImage+Utility.m */; };
+		C15FE9AE242FB02900A851F1 /* NSData+Cipher.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FE956242FB02800A851F1 /* NSData+Cipher.m */; };
+		C15FE9AF242FB02900A851F1 /* UIView+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FE957242FB02800A851F1 /* UIView+Utility.m */; };
+		C15FE9B0242FB02900A851F1 /* PERNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FE959242FB02800A851F1 /* PERNetworkTool.m */; };
+		C15FE9B1242FB02900A851F1 /* RACSignal+JSONParser.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FE95B242FB02800A851F1 /* RACSignal+JSONParser.m */; };
+		C15FE9B2242FB02900A851F1 /* PERNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FE95D242FB02800A851F1 /* PERNetwork.m */; };
+		C15FE9B3242FB02900A851F1 /* PERLogManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FE963242FB02800A851F1 /* PERLogManager.m */; };
+		C15FE9B4242FB02900A851F1 /* PERTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FE967242FB02800A851F1 /* PERTTYLogger.m */; };
+		C15FE9B5242FB02900A851F1 /* PERNetwork+Mock.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FE96A242FB02800A851F1 /* PERNetwork+Mock.m */; };
+		C15FE9B6242FB02900A851F1 /* PERNetwork+Texture.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FE96E242FB02800A851F1 /* PERNetwork+Texture.m */; };
+		C15FE9B7242FB02900A851F1 /* PERNetwork+CustomTable.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FE972242FB02800A851F1 /* PERNetwork+CustomTable.m */; };
+		C15FE9B8242FB02900A851F1 /* PERNetwork+User.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FE973242FB02800A851F1 /* PERNetwork+User.m */; };
+		C15FE9B9242FB02900A851F1 /* PERNetwork+Home.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FE974242FB02800A851F1 /* PERNetwork+Home.m */; };
+		C15FE9BA242FB02900A851F1 /* PERViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FE979242FB02800A851F1 /* PERViewModel.m */; };
+		C15FE9BB242FB02900A851F1 /* PERServices.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FE97A242FB02800A851F1 /* PERServices.m */; };
+		C15FE9BC242FB02900A851F1 /* PERListViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FE97B242FB02800A851F1 /* PERListViewModel.m */; };
+		C15FE9BD242FB02900A851F1 /* PERNavigater+ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FE97C242FB02800A851F1 /* PERNavigater+ViewController.m */; };
+		C15FE9BE242FB02900A851F1 /* PERNavigater.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FE97E242FB02800A851F1 /* PERNavigater.m */; };
+		C15FE9BF242FB02900A851F1 /* PERListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FE987242FB02800A851F1 /* PERListViewController.m */; };
+		C15FE9C0242FB02900A851F1 /* PERViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FE988242FB02800A851F1 /* PERViewController.m */; };
+		C15FE9C1242FB02900A851F1 /* PERNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FE98A242FB02800A851F1 /* PERNavigationController.m */; };
+		C15FE9C924308D4000A851F1 /* PERCarouselView.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FE9C824308D4000A851F1 /* PERCarouselView.m */; };
+		C15FE9CC24308D7700A851F1 /* PERCarouselCollectionLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FE9CB24308D7700A851F1 /* PERCarouselCollectionLayout.m */; };
+		C15FE9CF24308DA400A851F1 /* PERCarouselCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FE9CE24308DA400A851F1 /* PERCarouselCollectionViewCell.m */; };
+		C15FE9D224308DDA00A851F1 /* PERCarouselPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FE9D124308DDA00A851F1 /* PERCarouselPageView.m */; };
+		C15FE9D62430C63400A851F1 /* UIViewController+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FE9D52430C63400A851F1 /* UIViewController+Utility.m */; };
+		C15FE9E12430F09900A851F1 /* PERTypewriterTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FE9E02430F09900A851F1 /* PERTypewriterTextView.m */; };
+		C15FE9E92431B45700A851F1 /* mine_bg_movie_1.MOV in Resources */ = {isa = PBXBuildFile; fileRef = C15FE9E82431B45700A851F1 /* mine_bg_movie_1.MOV */; };
+		C15FE9F62431B6FD00A851F1 /* mine_bg_movie_2.MOV in Resources */ = {isa = PBXBuildFile; fileRef = C15FE9EE2431B6F800A851F1 /* mine_bg_movie_2.MOV */; };
+		C15FE9F72431B6FD00A851F1 /* mine_bg_movie_4.MOV in Resources */ = {isa = PBXBuildFile; fileRef = C15FE9EF2431B6F900A851F1 /* mine_bg_movie_4.MOV */; };
+		C15FE9F92431B6FD00A851F1 /* mine_bg_movie_3.MOV in Resources */ = {isa = PBXBuildFile; fileRef = C15FE9F12431B6FB00A851F1 /* mine_bg_movie_3.MOV */; };
+		C15FE9FE24320C6A00A851F1 /* PERRecordView.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FE9FD24320C6A00A851F1 /* PERRecordView.m */; };
+		C15FEA0124320CD900A851F1 /* PERRecordViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FEA0024320CD900A851F1 /* PERRecordViewLayout.m */; };
+		C15FEA0424320CF800A851F1 /* PERRecordViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FEA0324320CF800A851F1 /* PERRecordViewCell.m */; };
+		C15FEA07243222C000A851F1 /* PERRecordModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FEA06243222C000A851F1 /* PERRecordModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,13 +104,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5C82678F95B7ED3162A30E13 /* Pods-PersonaObjcCode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PersonaObjcCode.debug.xcconfig"; path = "Target Support Files/Pods-PersonaObjcCode/Pods-PersonaObjcCode.debug.xcconfig"; sourceTree = "<group>"; };
+		8528F9A7F4C1341BD6C52E9E /* Pods-PersonaObjcCode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PersonaObjcCode.release.xcconfig"; path = "Target Support Files/Pods-PersonaObjcCode/Pods-PersonaObjcCode.release.xcconfig"; sourceTree = "<group>"; };
+		A8824EE6A9AA4D5E828E8547 /* Pods_PersonaObjcCode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PersonaObjcCode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C15FE8C0242FAF6800A851F1 /* PersonaObjcCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonaObjcCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C15FE8C3242FAF6800A851F1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C15FE8C4242FAF6800A851F1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C15FE8C6242FAF6800A851F1 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		C15FE8C7242FAF6800A851F1 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		C15FE8C9242FAF6800A851F1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		C15FE8CA242FAF6800A851F1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		C15FE8CD242FAF6800A851F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C15FE8CF242FAF6B00A851F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C15FE8D2242FAF6B00A851F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,6 +121,146 @@
 		C15FE8E6242FAF6B00A851F1 /* PersonaObjcCodeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PersonaObjcCodeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C15FE8EA242FAF6B00A851F1 /* PersonaObjcCodeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonaObjcCodeUITests.m; sourceTree = "<group>"; };
 		C15FE8EC242FAF6B00A851F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C15FE8F9242FB02700A851F1 /* image_loading.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = image_loading.gif; sourceTree = "<group>"; };
+		C15FE8FC242FB02800A851F1 /* PERDemoViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PERDemoViewModel.m; sourceTree = "<group>"; };
+		C15FE8FD242FB02800A851F1 /* PERDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PERDemoViewController.h; sourceTree = "<group>"; };
+		C15FE8FF242FB02800A851F1 /* PERDemoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PERDemoModel.m; sourceTree = "<group>"; };
+		C15FE900242FB02800A851F1 /* PERDemoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PERDemoModel.h; sourceTree = "<group>"; };
+		C15FE902242FB02800A851F1 /* PERDemoViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PERDemoViewCell.h; sourceTree = "<group>"; };
+		C15FE903242FB02800A851F1 /* PERDemoViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PERDemoViewCell.m; sourceTree = "<group>"; };
+		C15FE904242FB02800A851F1 /* PERDemoViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PERDemoViewModel.h; sourceTree = "<group>"; };
+		C15FE905242FB02800A851F1 /* PERDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PERDemoViewController.m; sourceTree = "<group>"; };
+		C15FE907242FB02800A851F1 /* PERHomeViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PERHomeViewModel.h; sourceTree = "<group>"; };
+		C15FE908242FB02800A851F1 /* PERHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PERHomeViewController.m; sourceTree = "<group>"; };
+		C15FE909242FB02800A851F1 /* PERHomeViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PERHomeViewModel.m; sourceTree = "<group>"; };
+		C15FE90B242FB02800A851F1 /* PERHomeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PERHomeModel.m; sourceTree = "<group>"; };
+		C15FE90C242FB02800A851F1 /* PERHomeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PERHomeModel.h; sourceTree = "<group>"; };
+		C15FE90E242FB02800A851F1 /* PERHomeViewBannerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PERHomeViewBannerCell.m; sourceTree = "<group>"; };
+		C15FE90F242FB02800A851F1 /* PERHomeViewListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PERHomeViewListCell.m; sourceTree = "<group>"; };
+		C15FE910242FB02800A851F1 /* PERHomeViewBannerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PERHomeViewBannerCell.h; sourceTree = "<group>"; };
+		C15FE911242FB02800A851F1 /* PERHomeViewListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PERHomeViewListCell.h; sourceTree = "<group>"; };
+		C15FE912242FB02800A851F1 /* PERHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PERHomeViewController.h; sourceTree = "<group>"; };
+		C15FE914242FB02800A851F1 /* PERYogaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PERYogaViewController.h; sourceTree = "<group>"; };
+		C15FE915242FB02800A851F1 /* PERYogaViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PERYogaViewModel.m; sourceTree = "<group>"; };
+		C15FE916242FB02800A851F1 /* PERYogaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PERYogaViewController.m; sourceTree = "<group>"; };
+		C15FE917242FB02800A851F1 /* PERYogaViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PERYogaViewModel.h; sourceTree = "<group>"; };
+		C15FE919242FB02800A851F1 /* PERDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PERDetailViewController.m; sourceTree = "<group>"; };
+		C15FE91A242FB02800A851F1 /* PERDetailViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PERDetailViewModel.h; sourceTree = "<group>"; };
+		C15FE91B242FB02800A851F1 /* PERDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PERDetailViewController.h; sourceTree = "<group>"; };
+		C15FE91C242FB02800A851F1 /* PERDetailViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PERDetailViewModel.m; sourceTree = "<group>"; };
+		C15FE91E242FB02800A851F1 /* PERMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PERMineViewController.h; sourceTree = "<group>"; };
+		C15FE91F242FB02800A851F1 /* PERMineViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PERMineViewModel.m; sourceTree = "<group>"; };
+		C15FE920242FB02800A851F1 /* PERMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PERMineViewController.m; sourceTree = "<group>"; };
+		C15FE922242FB02800A851F1 /* PERUserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PERUserModel.h; sourceTree = "<group>"; };
+		C15FE923242FB02800A851F1 /* PERUserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PERUserModel.m; sourceTree = "<group>"; };
+		C15FE924242FB02800A851F1 /* PERMineViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PERMineViewModel.h; sourceTree = "<group>"; };
+		C15FE926242FB02800A851F1 /* PERTextureViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PERTextureViewModel.m; sourceTree = "<group>"; };
+		C15FE927242FB02800A851F1 /* PERTextureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PERTextureViewController.h; sourceTree = "<group>"; };
+		C15FE929242FB02800A851F1 /* PERTextureModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PERTextureModel.h; sourceTree = "<group>"; };
+		C15FE92A242FB02800A851F1 /* PERTextureModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PERTextureModel.m; sourceTree = "<group>"; };
+		C15FE92C242FB02800A851F1 /* PERTextureReplyCellNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PERTextureReplyCellNode.m; sourceTree = "<group>"; };
+		C15FE92D242FB02800A851F1 /* PERTextureCommentNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PERTextureCommentNode.h; sourceTree = "<group>"; };
+		C15FE92E242FB02800A851F1 /* PERTextureMutilImageNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PERTextureMutilImageNode.h; sourceTree = "<group>"; };
+		C15FE92F242FB02800A851F1 /* PERTextureMutilImageCellNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PERTextureMutilImageCellNode.h; sourceTree = "<group>"; };
+		C15FE930242FB02800A851F1 /* PERTextureCellNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PERTextureCellNode.h; sourceTree = "<group>"; };
+		C15FE931242FB02800A851F1 /* PERTextureCommentNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PERTextureCommentNode.m; sourceTree = "<group>"; };
+		C15FE932242FB02800A851F1 /* PERTextureReplyCellNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PERTextureReplyCellNode.h; sourceTree = "<group>"; };
+		C15FE933242FB02800A851F1 /* PERTextureMutilImageNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PERTextureMutilImageNode.m; sourceTree = "<group>"; };
+		C15FE934242FB02800A851F1 /* PERTextureCellNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PERTextureCellNode.m; sourceTree = "<group>"; };
+		C15FE935242FB02800A851F1 /* PERTextureMutilImageCellNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PERTextureMutilImageCellNode.m; sourceTree = "<group>"; };
+		C15FE936242FB02800A851F1 /* PERTextureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PERTextureViewController.m; sourceTree = "<group>"; };
+		C15FE937242FB02800A851F1 /* PERTextureViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PERTextureViewModel.h; sourceTree = "<group>"; };
+		C15FE939242FB02800A851F1 /* PERCustomTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PERCustomTableViewController.h; sourceTree = "<group>"; };
+		C15FE93A242FB02800A851F1 /* PERCustomTableViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PERCustomTableViewModel.m; sourceTree = "<group>"; };
+		C15FE93C242FB02800A851F1 /* PERCustomTableBannerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PERCustomTableBannerModel.m; sourceTree = "<group>"; };
+		C15FE93D242FB02800A851F1 /* PERCustomTableBannerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PERCustomTableBannerModel.h; sourceTree = "<group>"; };
+		C15FE93F242FB02800A851F1 /* PERCustomListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PERCustomListCell.h; sourceTree = "<group>"; };
+		C15FE940242FB02800A851F1 /* PERCustomBannerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PERCustomBannerCell.h; sourceTree = "<group>"; };
+		C15FE941242FB02800A851F1 /* PERCustomListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PERCustomListCell.m; sourceTree = "<group>"; };
+		C15FE942242FB02800A851F1 /* PERCustomBannerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PERCustomBannerCell.m; sourceTree = "<group>"; };
+		C15FE943242FB02800A851F1 /* PERCustomTableViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PERCustomTableViewModel.h; sourceTree = "<group>"; };
+		C15FE944242FB02800A851F1 /* PERCustomTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PERCustomTableViewController.m; sourceTree = "<group>"; };
+		C15FE946242FB02800A851F1 /* PERLoginViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PERLoginViewModel.m; sourceTree = "<group>"; };
+		C15FE947242FB02800A851F1 /* PERLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PERLoginViewController.m; sourceTree = "<group>"; };
+		C15FE948242FB02800A851F1 /* PERLoginViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PERLoginViewModel.h; sourceTree = "<group>"; };
+		C15FE949242FB02800A851F1 /* PERLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PERLoginViewController.h; sourceTree = "<group>"; };
+		C15FE94D242FB02800A851F1 /* PERPersistentDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PERPersistentDataManager.m; sourceTree = "<group>"; };
+		C15FE94E242FB02800A851F1 /* PERPersistentDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PERPersistentDataManager.h; sourceTree = "<group>"; };
+		C15FE950242FB02800A851F1 /* NSData+Cipher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Cipher.h"; sourceTree = "<group>"; };
+		C15FE951242FB02800A851F1 /* NSString+Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Utility.m"; sourceTree = "<group>"; };
+		C15FE952242FB02800A851F1 /* UIImage+Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Utility.m"; sourceTree = "<group>"; };
+		C15FE953242FB02800A851F1 /* UIView+Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Utility.h"; sourceTree = "<group>"; };
+		C15FE954242FB02800A851F1 /* UIImage+Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Utility.h"; sourceTree = "<group>"; };
+		C15FE955242FB02800A851F1 /* NSString+Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Utility.h"; sourceTree = "<group>"; };
+		C15FE956242FB02800A851F1 /* NSData+Cipher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Cipher.m"; sourceTree = "<group>"; };
+		C15FE957242FB02800A851F1 /* UIView+Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Utility.m"; sourceTree = "<group>"; };
+		C15FE959242FB02800A851F1 /* PERNetworkTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PERNetworkTool.m; sourceTree = "<group>"; };
+		C15FE95A242FB02800A851F1 /* PERNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PERNetwork.h; sourceTree = "<group>"; };
+		C15FE95B242FB02800A851F1 /* RACSignal+JSONParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RACSignal+JSONParser.m"; sourceTree = "<group>"; };
+		C15FE95C242FB02800A851F1 /* PERNetworkTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PERNetworkTool.h; sourceTree = "<group>"; };
+		C15FE95D242FB02800A851F1 /* PERNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PERNetwork.m; sourceTree = "<group>"; };
+		C15FE95E242FB02800A851F1 /* RACSignal+JSONParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RACSignal+JSONParser.h"; sourceTree = "<group>"; };
+		C15FE960242FB02800A851F1 /* PERMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PERMacro.h; sourceTree = "<group>"; };
+		C15FE961242FB02800A851F1 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		C15FE963242FB02800A851F1 /* PERLogManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PERLogManager.m; sourceTree = "<group>"; };
+		C15FE964242FB02800A851F1 /* PERTTYLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PERTTYLogger.h; sourceTree = "<group>"; };
+		C15FE965242FB02800A851F1 /* PERLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PERLog.h; sourceTree = "<group>"; };
+		C15FE966242FB02800A851F1 /* PERLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PERLogger.h; sourceTree = "<group>"; };
+		C15FE967242FB02800A851F1 /* PERTTYLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PERTTYLogger.m; sourceTree = "<group>"; };
+		C15FE968242FB02800A851F1 /* PERLogManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PERLogManager.h; sourceTree = "<group>"; };
+		C15FE96A242FB02800A851F1 /* PERNetwork+Mock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PERNetwork+Mock.m"; sourceTree = "<group>"; };
+		C15FE96B242FB02800A851F1 /* PERNetwork+Mock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PERNetwork+Mock.h"; sourceTree = "<group>"; };
+		C15FE96D242FB02800A851F1 /* PERNetwork+CustomTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PERNetwork+CustomTable.h"; sourceTree = "<group>"; };
+		C15FE96E242FB02800A851F1 /* PERNetwork+Texture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PERNetwork+Texture.m"; sourceTree = "<group>"; };
+		C15FE96F242FB02800A851F1 /* PERNetwork+User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PERNetwork+User.h"; sourceTree = "<group>"; };
+		C15FE970242FB02800A851F1 /* PERNetwork+Home.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PERNetwork+Home.h"; sourceTree = "<group>"; };
+		C15FE971242FB02800A851F1 /* PERNetwork+Texture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PERNetwork+Texture.h"; sourceTree = "<group>"; };
+		C15FE972242FB02800A851F1 /* PERNetwork+CustomTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PERNetwork+CustomTable.m"; sourceTree = "<group>"; };
+		C15FE973242FB02800A851F1 /* PERNetwork+User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PERNetwork+User.m"; sourceTree = "<group>"; };
+		C15FE974242FB02800A851F1 /* PERNetwork+Home.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PERNetwork+Home.m"; sourceTree = "<group>"; };
+		C15FE977242FB02800A851F1 /* PERNavigater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PERNavigater.h; sourceTree = "<group>"; };
+		C15FE978242FB02800A851F1 /* PERNavigaterProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PERNavigaterProtocol.h; sourceTree = "<group>"; };
+		C15FE979242FB02800A851F1 /* PERViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PERViewModel.m; sourceTree = "<group>"; };
+		C15FE97A242FB02800A851F1 /* PERServices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PERServices.m; sourceTree = "<group>"; };
+		C15FE97B242FB02800A851F1 /* PERListViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PERListViewModel.m; sourceTree = "<group>"; };
+		C15FE97C242FB02800A851F1 /* PERNavigater+ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PERNavigater+ViewController.m"; sourceTree = "<group>"; };
+		C15FE97D242FB02800A851F1 /* PERBussinessHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PERBussinessHeader.h; sourceTree = "<group>"; };
+		C15FE97E242FB02800A851F1 /* PERNavigater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PERNavigater.m; sourceTree = "<group>"; };
+		C15FE97F242FB02800A851F1 /* PERListViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PERListViewModel.h; sourceTree = "<group>"; };
+		C15FE980242FB02800A851F1 /* PERServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PERServices.h; sourceTree = "<group>"; };
+		C15FE981242FB02800A851F1 /* PERViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PERViewModel.h; sourceTree = "<group>"; };
+		C15FE982242FB02800A851F1 /* PERNavigater+ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PERNavigater+ViewController.h"; sourceTree = "<group>"; };
+		C15FE984242FB02800A851F1 /* PERViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PERViewProtocol.h; sourceTree = "<group>"; };
+		C15FE985242FB02800A851F1 /* PERViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PERViewController.h; sourceTree = "<group>"; };
+		C15FE986242FB02800A851F1 /* PERNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PERNavigationController.h; sourceTree = "<group>"; };
+		C15FE987242FB02800A851F1 /* PERListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PERListViewController.m; sourceTree = "<group>"; };
+		C15FE988242FB02800A851F1 /* PERViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PERViewController.m; sourceTree = "<group>"; };
+		C15FE989242FB02800A851F1 /* PERListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PERListViewController.h; sourceTree = "<group>"; };
+		C15FE98A242FB02800A851F1 /* PERNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PERNavigationController.m; sourceTree = "<group>"; };
+		C15FE9C724308D4000A851F1 /* PERCarouselView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PERCarouselView.h; sourceTree = "<group>"; };
+		C15FE9C824308D4000A851F1 /* PERCarouselView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PERCarouselView.m; sourceTree = "<group>"; };
+		C15FE9CA24308D7700A851F1 /* PERCarouselCollectionLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PERCarouselCollectionLayout.h; sourceTree = "<group>"; };
+		C15FE9CB24308D7700A851F1 /* PERCarouselCollectionLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PERCarouselCollectionLayout.m; sourceTree = "<group>"; };
+		C15FE9CD24308DA300A851F1 /* PERCarouselCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PERCarouselCollectionViewCell.h; sourceTree = "<group>"; };
+		C15FE9CE24308DA400A851F1 /* PERCarouselCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PERCarouselCollectionViewCell.m; sourceTree = "<group>"; };
+		C15FE9D024308DDA00A851F1 /* PERCarouselPageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PERCarouselPageView.h; sourceTree = "<group>"; };
+		C15FE9D124308DDA00A851F1 /* PERCarouselPageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PERCarouselPageView.m; sourceTree = "<group>"; };
+		C15FE9D42430C63300A851F1 /* UIViewController+Utility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Utility.h"; sourceTree = "<group>"; };
+		C15FE9D52430C63400A851F1 /* UIViewController+Utility.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Utility.m"; sourceTree = "<group>"; };
+		C15FE9DF2430F09900A851F1 /* PERTypewriterTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PERTypewriterTextView.h; sourceTree = "<group>"; };
+		C15FE9E02430F09900A851F1 /* PERTypewriterTextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PERTypewriterTextView.m; sourceTree = "<group>"; };
+		C15FE9E82431B45700A851F1 /* mine_bg_movie_1.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = mine_bg_movie_1.MOV; sourceTree = "<group>"; };
+		C15FE9EE2431B6F800A851F1 /* mine_bg_movie_2.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = mine_bg_movie_2.MOV; sourceTree = "<group>"; };
+		C15FE9EF2431B6F900A851F1 /* mine_bg_movie_4.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = mine_bg_movie_4.MOV; sourceTree = "<group>"; };
+		C15FE9F12431B6FB00A851F1 /* mine_bg_movie_3.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = mine_bg_movie_3.MOV; sourceTree = "<group>"; };
+		C15FE9FC24320C6A00A851F1 /* PERRecordView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PERRecordView.h; sourceTree = "<group>"; };
+		C15FE9FD24320C6A00A851F1 /* PERRecordView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PERRecordView.m; sourceTree = "<group>"; };
+		C15FE9FF24320CD900A851F1 /* PERRecordViewLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PERRecordViewLayout.h; sourceTree = "<group>"; };
+		C15FEA0024320CD900A851F1 /* PERRecordViewLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PERRecordViewLayout.m; sourceTree = "<group>"; };
+		C15FEA0224320CF800A851F1 /* PERRecordViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PERRecordViewCell.h; sourceTree = "<group>"; };
+		C15FEA0324320CF800A851F1 /* PERRecordViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PERRecordViewCell.m; sourceTree = "<group>"; };
+		C15FEA05243222C000A851F1 /* PERRecordModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PERRecordModel.h; sourceTree = "<group>"; };
+		C15FEA06243222C000A851F1 /* PERRecordModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PERRecordModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +268,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB4419D3E6175BE869E06BF1 /* Pods_PersonaObjcCode.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +296,8 @@
 				C15FE8DE242FAF6B00A851F1 /* PersonaObjcCodeTests */,
 				C15FE8E9242FAF6B00A851F1 /* PersonaObjcCodeUITests */,
 				C15FE8C1242FAF6800A851F1 /* Products */,
+				FFC6735BCA39E55B0EFB6BB7 /* Pods */,
+				CDBE68C5144C3074458037C8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,17 +314,16 @@
 		C15FE8C2242FAF6800A851F1 /* PersonaObjcCode */ = {
 			isa = PBXGroup;
 			children = (
+				C15FE94A242FB02800A851F1 /* Core */,
+				C15FE8FA242FB02800A851F1 /* Business */,
+				C15FE8F8242FB02700A851F1 /* Resources */,
 				C15FE8C3242FAF6800A851F1 /* AppDelegate.h */,
 				C15FE8C4242FAF6800A851F1 /* AppDelegate.m */,
-				C15FE8C6242FAF6800A851F1 /* SceneDelegate.h */,
-				C15FE8C7242FAF6800A851F1 /* SceneDelegate.m */,
-				C15FE8C9242FAF6800A851F1 /* ViewController.h */,
-				C15FE8CA242FAF6800A851F1 /* ViewController.m */,
-				C15FE8CC242FAF6800A851F1 /* Main.storyboard */,
 				C15FE8CF242FAF6B00A851F1 /* Assets.xcassets */,
-				C15FE8D1242FAF6B00A851F1 /* LaunchScreen.storyboard */,
 				C15FE8D4242FAF6B00A851F1 /* Info.plist */,
+				C15FE8D1242FAF6B00A851F1 /* LaunchScreen.storyboard */,
 				C15FE8D5242FAF6B00A851F1 /* main.m */,
+				C15FE8CC242FAF6800A851F1 /* Main.storyboard */,
 			);
 			path = PersonaObjcCode;
 			sourceTree = "<group>";
@@ -137,6 +346,432 @@
 			path = PersonaObjcCodeUITests;
 			sourceTree = "<group>";
 		};
+		C15FE8F8242FB02700A851F1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C15FE9E82431B45700A851F1 /* mine_bg_movie_1.MOV */,
+				C15FE9EE2431B6F800A851F1 /* mine_bg_movie_2.MOV */,
+				C15FE9F12431B6FB00A851F1 /* mine_bg_movie_3.MOV */,
+				C15FE9EF2431B6F900A851F1 /* mine_bg_movie_4.MOV */,
+				C15FE8F9242FB02700A851F1 /* image_loading.gif */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C15FE8FA242FB02800A851F1 /* Business */ = {
+			isa = PBXGroup;
+			children = (
+				C15FE938242FB02800A851F1 /* CustomTable */,
+				C15FE8FB242FB02800A851F1 /* Demo */,
+				C15FE918242FB02800A851F1 /* Detail */,
+				C15FE906242FB02800A851F1 /* Home */,
+				C15FE945242FB02800A851F1 /* Login */,
+				C15FE91D242FB02800A851F1 /* Mine */,
+				C15FE925242FB02800A851F1 /* Texture */,
+				C15FE913242FB02800A851F1 /* Yoga */,
+			);
+			path = Business;
+			sourceTree = "<group>";
+		};
+		C15FE8FB242FB02800A851F1 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				C15FE8FE242FB02800A851F1 /* Model */,
+				C15FE901242FB02800A851F1 /* View */,
+				C15FE8FD242FB02800A851F1 /* PERDemoViewController.h */,
+				C15FE905242FB02800A851F1 /* PERDemoViewController.m */,
+				C15FE904242FB02800A851F1 /* PERDemoViewModel.h */,
+				C15FE8FC242FB02800A851F1 /* PERDemoViewModel.m */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		C15FE8FE242FB02800A851F1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C15FE900242FB02800A851F1 /* PERDemoModel.h */,
+				C15FE8FF242FB02800A851F1 /* PERDemoModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C15FE901242FB02800A851F1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C15FE902242FB02800A851F1 /* PERDemoViewCell.h */,
+				C15FE903242FB02800A851F1 /* PERDemoViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C15FE906242FB02800A851F1 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				C15FE90A242FB02800A851F1 /* Model */,
+				C15FE90D242FB02800A851F1 /* View */,
+				C15FE912242FB02800A851F1 /* PERHomeViewController.h */,
+				C15FE908242FB02800A851F1 /* PERHomeViewController.m */,
+				C15FE907242FB02800A851F1 /* PERHomeViewModel.h */,
+				C15FE909242FB02800A851F1 /* PERHomeViewModel.m */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		C15FE90A242FB02800A851F1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C15FE90C242FB02800A851F1 /* PERHomeModel.h */,
+				C15FE90B242FB02800A851F1 /* PERHomeModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C15FE90D242FB02800A851F1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C15FE910242FB02800A851F1 /* PERHomeViewBannerCell.h */,
+				C15FE90E242FB02800A851F1 /* PERHomeViewBannerCell.m */,
+				C15FE911242FB02800A851F1 /* PERHomeViewListCell.h */,
+				C15FE90F242FB02800A851F1 /* PERHomeViewListCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C15FE913242FB02800A851F1 /* Yoga */ = {
+			isa = PBXGroup;
+			children = (
+				C15FE914242FB02800A851F1 /* PERYogaViewController.h */,
+				C15FE916242FB02800A851F1 /* PERYogaViewController.m */,
+				C15FE917242FB02800A851F1 /* PERYogaViewModel.h */,
+				C15FE915242FB02800A851F1 /* PERYogaViewModel.m */,
+			);
+			path = Yoga;
+			sourceTree = "<group>";
+		};
+		C15FE918242FB02800A851F1 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				C15FE91B242FB02800A851F1 /* PERDetailViewController.h */,
+				C15FE919242FB02800A851F1 /* PERDetailViewController.m */,
+				C15FE91A242FB02800A851F1 /* PERDetailViewModel.h */,
+				C15FE91C242FB02800A851F1 /* PERDetailViewModel.m */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		C15FE91D242FB02800A851F1 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				C15FE921242FB02800A851F1 /* Model */,
+				C15FE91E242FB02800A851F1 /* PERMineViewController.h */,
+				C15FE920242FB02800A851F1 /* PERMineViewController.m */,
+				C15FE924242FB02800A851F1 /* PERMineViewModel.h */,
+				C15FE91F242FB02800A851F1 /* PERMineViewModel.m */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		C15FE921242FB02800A851F1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C15FE922242FB02800A851F1 /* PERUserModel.h */,
+				C15FE923242FB02800A851F1 /* PERUserModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C15FE925242FB02800A851F1 /* Texture */ = {
+			isa = PBXGroup;
+			children = (
+				C15FE928242FB02800A851F1 /* Model */,
+				C15FE92B242FB02800A851F1 /* View */,
+				C15FE927242FB02800A851F1 /* PERTextureViewController.h */,
+				C15FE936242FB02800A851F1 /* PERTextureViewController.m */,
+				C15FE937242FB02800A851F1 /* PERTextureViewModel.h */,
+				C15FE926242FB02800A851F1 /* PERTextureViewModel.m */,
+			);
+			path = Texture;
+			sourceTree = "<group>";
+		};
+		C15FE928242FB02800A851F1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C15FE929242FB02800A851F1 /* PERTextureModel.h */,
+				C15FE92A242FB02800A851F1 /* PERTextureModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C15FE92B242FB02800A851F1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C15FE930242FB02800A851F1 /* PERTextureCellNode.h */,
+				C15FE934242FB02800A851F1 /* PERTextureCellNode.m */,
+				C15FE92D242FB02800A851F1 /* PERTextureCommentNode.h */,
+				C15FE931242FB02800A851F1 /* PERTextureCommentNode.m */,
+				C15FE92F242FB02800A851F1 /* PERTextureMutilImageCellNode.h */,
+				C15FE935242FB02800A851F1 /* PERTextureMutilImageCellNode.m */,
+				C15FE92E242FB02800A851F1 /* PERTextureMutilImageNode.h */,
+				C15FE933242FB02800A851F1 /* PERTextureMutilImageNode.m */,
+				C15FE932242FB02800A851F1 /* PERTextureReplyCellNode.h */,
+				C15FE92C242FB02800A851F1 /* PERTextureReplyCellNode.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C15FE938242FB02800A851F1 /* CustomTable */ = {
+			isa = PBXGroup;
+			children = (
+				C15FE93B242FB02800A851F1 /* Model */,
+				C15FE93E242FB02800A851F1 /* View */,
+				C15FE939242FB02800A851F1 /* PERCustomTableViewController.h */,
+				C15FE944242FB02800A851F1 /* PERCustomTableViewController.m */,
+				C15FE943242FB02800A851F1 /* PERCustomTableViewModel.h */,
+				C15FE93A242FB02800A851F1 /* PERCustomTableViewModel.m */,
+			);
+			path = CustomTable;
+			sourceTree = "<group>";
+		};
+		C15FE93B242FB02800A851F1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C15FE93D242FB02800A851F1 /* PERCustomTableBannerModel.h */,
+				C15FE93C242FB02800A851F1 /* PERCustomTableBannerModel.m */,
+				C15FEA05243222C000A851F1 /* PERRecordModel.h */,
+				C15FEA06243222C000A851F1 /* PERRecordModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C15FE93E242FB02800A851F1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C15FE940242FB02800A851F1 /* PERCustomBannerCell.h */,
+				C15FE942242FB02800A851F1 /* PERCustomBannerCell.m */,
+				C15FE93F242FB02800A851F1 /* PERCustomListCell.h */,
+				C15FE941242FB02800A851F1 /* PERCustomListCell.m */,
+				C15FE9FC24320C6A00A851F1 /* PERRecordView.h */,
+				C15FE9FD24320C6A00A851F1 /* PERRecordView.m */,
+				C15FEA0224320CF800A851F1 /* PERRecordViewCell.h */,
+				C15FEA0324320CF800A851F1 /* PERRecordViewCell.m */,
+				C15FE9FF24320CD900A851F1 /* PERRecordViewLayout.h */,
+				C15FEA0024320CD900A851F1 /* PERRecordViewLayout.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C15FE945242FB02800A851F1 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				C15FE949242FB02800A851F1 /* PERLoginViewController.h */,
+				C15FE947242FB02800A851F1 /* PERLoginViewController.m */,
+				C15FE948242FB02800A851F1 /* PERLoginViewModel.h */,
+				C15FE946242FB02800A851F1 /* PERLoginViewModel.m */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		C15FE94A242FB02800A851F1 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				C15FE9C324308C9A00A851F1 /* Module */,
+				C15FE969242FB02800A851F1 /* Mock */,
+				C15FE96C242FB02800A851F1 /* Request */,
+				C15FE94B242FB02800A851F1 /* Util */,
+				C15FE975242FB02800A851F1 /* MVVM */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		C15FE94B242FB02800A851F1 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				C15FE94C242FB02800A851F1 /* Cache */,
+				C15FE94F242FB02800A851F1 /* Category */,
+				C15FE962242FB02800A851F1 /* Log */,
+				C15FE95F242FB02800A851F1 /* Macro */,
+				C15FE958242FB02800A851F1 /* Network */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		C15FE94C242FB02800A851F1 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				C15FE94E242FB02800A851F1 /* PERPersistentDataManager.h */,
+				C15FE94D242FB02800A851F1 /* PERPersistentDataManager.m */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
+		C15FE94F242FB02800A851F1 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				C15FE950242FB02800A851F1 /* NSData+Cipher.h */,
+				C15FE956242FB02800A851F1 /* NSData+Cipher.m */,
+				C15FE955242FB02800A851F1 /* NSString+Utility.h */,
+				C15FE951242FB02800A851F1 /* NSString+Utility.m */,
+				C15FE954242FB02800A851F1 /* UIImage+Utility.h */,
+				C15FE952242FB02800A851F1 /* UIImage+Utility.m */,
+				C15FE953242FB02800A851F1 /* UIView+Utility.h */,
+				C15FE957242FB02800A851F1 /* UIView+Utility.m */,
+				C15FE9D42430C63300A851F1 /* UIViewController+Utility.h */,
+				C15FE9D52430C63400A851F1 /* UIViewController+Utility.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		C15FE958242FB02800A851F1 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				C15FE95A242FB02800A851F1 /* PERNetwork.h */,
+				C15FE95D242FB02800A851F1 /* PERNetwork.m */,
+				C15FE95C242FB02800A851F1 /* PERNetworkTool.h */,
+				C15FE959242FB02800A851F1 /* PERNetworkTool.m */,
+				C15FE95E242FB02800A851F1 /* RACSignal+JSONParser.h */,
+				C15FE95B242FB02800A851F1 /* RACSignal+JSONParser.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		C15FE95F242FB02800A851F1 /* Macro */ = {
+			isa = PBXGroup;
+			children = (
+				C15FE960242FB02800A851F1 /* PERMacro.h */,
+				C15FE961242FB02800A851F1 /* PrefixHeader.pch */,
+			);
+			path = Macro;
+			sourceTree = "<group>";
+		};
+		C15FE962242FB02800A851F1 /* Log */ = {
+			isa = PBXGroup;
+			children = (
+				C15FE965242FB02800A851F1 /* PERLog.h */,
+				C15FE966242FB02800A851F1 /* PERLogger.h */,
+				C15FE968242FB02800A851F1 /* PERLogManager.h */,
+				C15FE963242FB02800A851F1 /* PERLogManager.m */,
+				C15FE964242FB02800A851F1 /* PERTTYLogger.h */,
+				C15FE967242FB02800A851F1 /* PERTTYLogger.m */,
+			);
+			path = Log;
+			sourceTree = "<group>";
+		};
+		C15FE969242FB02800A851F1 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				C15FE96B242FB02800A851F1 /* PERNetwork+Mock.h */,
+				C15FE96A242FB02800A851F1 /* PERNetwork+Mock.m */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		C15FE96C242FB02800A851F1 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				C15FE96D242FB02800A851F1 /* PERNetwork+CustomTable.h */,
+				C15FE972242FB02800A851F1 /* PERNetwork+CustomTable.m */,
+				C15FE970242FB02800A851F1 /* PERNetwork+Home.h */,
+				C15FE974242FB02800A851F1 /* PERNetwork+Home.m */,
+				C15FE971242FB02800A851F1 /* PERNetwork+Texture.h */,
+				C15FE96E242FB02800A851F1 /* PERNetwork+Texture.m */,
+				C15FE96F242FB02800A851F1 /* PERNetwork+User.h */,
+				C15FE973242FB02800A851F1 /* PERNetwork+User.m */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		C15FE975242FB02800A851F1 /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				C15FE976242FB02800A851F1 /* ViewModel */,
+				C15FE983242FB02800A851F1 /* View */,
+			);
+			path = MVVM;
+			sourceTree = "<group>";
+		};
+		C15FE976242FB02800A851F1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C15FE97D242FB02800A851F1 /* PERBussinessHeader.h */,
+				C15FE97F242FB02800A851F1 /* PERListViewModel.h */,
+				C15FE97B242FB02800A851F1 /* PERListViewModel.m */,
+				C15FE977242FB02800A851F1 /* PERNavigater.h */,
+				C15FE97E242FB02800A851F1 /* PERNavigater.m */,
+				C15FE982242FB02800A851F1 /* PERNavigater+ViewController.h */,
+				C15FE97C242FB02800A851F1 /* PERNavigater+ViewController.m */,
+				C15FE978242FB02800A851F1 /* PERNavigaterProtocol.h */,
+				C15FE980242FB02800A851F1 /* PERServices.h */,
+				C15FE97A242FB02800A851F1 /* PERServices.m */,
+				C15FE981242FB02800A851F1 /* PERViewModel.h */,
+				C15FE979242FB02800A851F1 /* PERViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C15FE983242FB02800A851F1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C15FE989242FB02800A851F1 /* PERListViewController.h */,
+				C15FE987242FB02800A851F1 /* PERListViewController.m */,
+				C15FE986242FB02800A851F1 /* PERNavigationController.h */,
+				C15FE98A242FB02800A851F1 /* PERNavigationController.m */,
+				C15FE985242FB02800A851F1 /* PERViewController.h */,
+				C15FE988242FB02800A851F1 /* PERViewController.m */,
+				C15FE984242FB02800A851F1 /* PERViewProtocol.h */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C15FE9C324308C9A00A851F1 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				C15FE9DB2430EF3C00A851F1 /* Typewriter */,
+				C15FE9D324309B4000A851F1 /* CarouselView */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		C15FE9D324309B4000A851F1 /* CarouselView */ = {
+			isa = PBXGroup;
+			children = (
+				C15FE9C724308D4000A851F1 /* PERCarouselView.h */,
+				C15FE9C824308D4000A851F1 /* PERCarouselView.m */,
+				C15FE9CA24308D7700A851F1 /* PERCarouselCollectionLayout.h */,
+				C15FE9CB24308D7700A851F1 /* PERCarouselCollectionLayout.m */,
+				C15FE9CD24308DA300A851F1 /* PERCarouselCollectionViewCell.h */,
+				C15FE9CE24308DA400A851F1 /* PERCarouselCollectionViewCell.m */,
+				C15FE9D024308DDA00A851F1 /* PERCarouselPageView.h */,
+				C15FE9D124308DDA00A851F1 /* PERCarouselPageView.m */,
+			);
+			path = CarouselView;
+			sourceTree = "<group>";
+		};
+		C15FE9DB2430EF3C00A851F1 /* Typewriter */ = {
+			isa = PBXGroup;
+			children = (
+				C15FE9DF2430F09900A851F1 /* PERTypewriterTextView.h */,
+				C15FE9E02430F09900A851F1 /* PERTypewriterTextView.m */,
+			);
+			path = Typewriter;
+			sourceTree = "<group>";
+		};
+		CDBE68C5144C3074458037C8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A8824EE6A9AA4D5E828E8547 /* Pods_PersonaObjcCode.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FFC6735BCA39E55B0EFB6BB7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5C82678F95B7ED3162A30E13 /* Pods-PersonaObjcCode.debug.xcconfig */,
+				8528F9A7F4C1341BD6C52E9E /* Pods-PersonaObjcCode.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,9 +779,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C15FE8EF242FAF6B00A851F1 /* Build configuration list for PBXNativeTarget "PersonaObjcCode" */;
 			buildPhases = (
+				8B126F30FCBE3DF4C6E716C4 /* [CP] Check Pods Manifest.lock */,
 				C15FE8BC242FAF6800A851F1 /* Sources */,
 				C15FE8BD242FAF6800A851F1 /* Frameworks */,
 				C15FE8BE242FAF6800A851F1 /* Resources */,
+				2C9C1E87769549644D3CB791 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -241,8 +878,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C15FE8D3242FAF6B00A851F1 /* LaunchScreen.storyboard in Resources */,
+				C15FE9F62431B6FD00A851F1 /* mine_bg_movie_2.MOV in Resources */,
+				C15FE98B242FB02900A851F1 /* image_loading.gif in Resources */,
+				C15FE9F72431B6FD00A851F1 /* mine_bg_movie_4.MOV in Resources */,
 				C15FE8D0242FAF6B00A851F1 /* Assets.xcassets in Resources */,
 				C15FE8CE242FAF6800A851F1 /* Main.storyboard in Resources */,
+				C15FE9F92431B6FD00A851F1 /* mine_bg_movie_3.MOV in Resources */,
+				C15FE9E92431B45700A851F1 /* mine_bg_movie_1.MOV in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,15 +904,119 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2C9C1E87769549644D3CB791 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PersonaObjcCode/Pods-PersonaObjcCode-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PersonaObjcCode/Pods-PersonaObjcCode-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PersonaObjcCode/Pods-PersonaObjcCode-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B126F30FCBE3DF4C6E716C4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PersonaObjcCode-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C15FE8BC242FAF6800A851F1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C15FE8CB242FAF6800A851F1 /* ViewController.m in Sources */,
+				C15FEA07243222C000A851F1 /* PERRecordModel.m in Sources */,
+				C15FE9A3242FB02900A851F1 /* PERTextureViewController.m in Sources */,
+				C15FE992242FB02900A851F1 /* PERHomeModel.m in Sources */,
+				C15FE9C0242FB02900A851F1 /* PERViewController.m in Sources */,
+				C15FE9CC24308D7700A851F1 /* PERCarouselCollectionLayout.m in Sources */,
+				C15FE9C1242FB02900A851F1 /* PERNavigationController.m in Sources */,
+				C15FE9A0242FB02900A851F1 /* PERTextureMutilImageNode.m in Sources */,
+				C15FE99A242FB02900A851F1 /* PERMineViewController.m in Sources */,
+				C15FE9BC242FB02900A851F1 /* PERListViewModel.m in Sources */,
+				C15FE98D242FB02900A851F1 /* PERDemoModel.m in Sources */,
+				C15FE9E12430F09900A851F1 /* PERTypewriterTextView.m in Sources */,
+				C15FE995242FB02900A851F1 /* PERYogaViewModel.m in Sources */,
+				C15FE98C242FB02900A851F1 /* PERDemoViewModel.m in Sources */,
+				C15FE990242FB02900A851F1 /* PERHomeViewController.m in Sources */,
+				C15FE9A7242FB02900A851F1 /* PERCustomBannerCell.m in Sources */,
+				C15FE99C242FB02900A851F1 /* PERTextureViewModel.m in Sources */,
+				C15FEA0124320CD900A851F1 /* PERRecordViewLayout.m in Sources */,
+				C15FE9AD242FB02900A851F1 /* UIImage+Utility.m in Sources */,
+				C15FE9AE242FB02900A851F1 /* NSData+Cipher.m in Sources */,
+				C15FE9CF24308DA400A851F1 /* PERCarouselCollectionViewCell.m in Sources */,
+				C15FE9AB242FB02900A851F1 /* PERPersistentDataManager.m in Sources */,
+				C15FE9AC242FB02900A851F1 /* NSString+Utility.m in Sources */,
+				C15FE9C924308D4000A851F1 /* PERCarouselView.m in Sources */,
+				C15FE9A1242FB02900A851F1 /* PERTextureCellNode.m in Sources */,
+				C15FE9D224308DDA00A851F1 /* PERCarouselPageView.m in Sources */,
+				C15FE9FE24320C6A00A851F1 /* PERRecordView.m in Sources */,
+				C15FE9A2242FB02900A851F1 /* PERTextureMutilImageCellNode.m in Sources */,
+				C15FE98E242FB02900A851F1 /* PERDemoViewCell.m in Sources */,
+				C15FE9B5242FB02900A851F1 /* PERNetwork+Mock.m in Sources */,
+				C15FE9B9242FB02900A851F1 /* PERNetwork+Home.m in Sources */,
+				C15FE9B3242FB02900A851F1 /* PERLogManager.m in Sources */,
+				C15FE9A4242FB02900A851F1 /* PERCustomTableViewModel.m in Sources */,
+				C15FE996242FB02900A851F1 /* PERYogaViewController.m in Sources */,
+				C15FE9A5242FB02900A851F1 /* PERCustomTableBannerModel.m in Sources */,
+				C15FE994242FB02900A851F1 /* PERHomeViewListCell.m in Sources */,
+				C15FE99F242FB02900A851F1 /* PERTextureCommentNode.m in Sources */,
+				C15FE9B8242FB02900A851F1 /* PERNetwork+User.m in Sources */,
+				C15FE9BF242FB02900A851F1 /* PERListViewController.m in Sources */,
+				C15FE9BB242FB02900A851F1 /* PERServices.m in Sources */,
+				C15FE99D242FB02900A851F1 /* PERTextureModel.m in Sources */,
+				C15FE991242FB02900A851F1 /* PERHomeViewModel.m in Sources */,
+				C15FE9B1242FB02900A851F1 /* RACSignal+JSONParser.m in Sources */,
+				C15FE9AA242FB02900A851F1 /* PERLoginViewController.m in Sources */,
+				C15FE9B4242FB02900A851F1 /* PERTTYLogger.m in Sources */,
+				C15FE9A6242FB02900A851F1 /* PERCustomListCell.m in Sources */,
+				C15FEA0424320CF800A851F1 /* PERRecordViewCell.m in Sources */,
+				C15FE9AF242FB02900A851F1 /* UIView+Utility.m in Sources */,
+				C15FE998242FB02900A851F1 /* PERDetailViewModel.m in Sources */,
+				C15FE9B6242FB02900A851F1 /* PERNetwork+Texture.m in Sources */,
+				C15FE9BA242FB02900A851F1 /* PERViewModel.m in Sources */,
+				C15FE9B7242FB02900A851F1 /* PERNetwork+CustomTable.m in Sources */,
 				C15FE8C5242FAF6800A851F1 /* AppDelegate.m in Sources */,
+				C15FE9D62430C63400A851F1 /* UIViewController+Utility.m in Sources */,
+				C15FE9BE242FB02900A851F1 /* PERNavigater.m in Sources */,
+				C15FE9A9242FB02900A851F1 /* PERLoginViewModel.m in Sources */,
+				C15FE98F242FB02900A851F1 /* PERDemoViewController.m in Sources */,
 				C15FE8D6242FAF6B00A851F1 /* main.m in Sources */,
-				C15FE8C8242FAF6800A851F1 /* SceneDelegate.m in Sources */,
+				C15FE9A8242FB02900A851F1 /* PERCustomTableViewController.m in Sources */,
+				C15FE99E242FB02900A851F1 /* PERTextureReplyCellNode.m in Sources */,
+				C15FE9BD242FB02900A851F1 /* PERNavigater+ViewController.m in Sources */,
+				C15FE9B0242FB02900A851F1 /* PERNetworkTool.m in Sources */,
+				C15FE9B2242FB02900A851F1 /* PERNetwork.m in Sources */,
+				C15FE997242FB02900A851F1 /* PERDetailViewController.m in Sources */,
+				C15FE99B242FB02900A851F1 /* PERUserModel.m in Sources */,
+				C15FE999242FB02900A851F1 /* PERMineViewModel.m in Sources */,
+				C15FE993242FB02900A851F1 /* PERHomeViewBannerCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,10 +1183,12 @@
 		};
 		C15FE8F0242FAF6B00A851F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C82678F95B7ED3162A30E13 /* Pods-PersonaObjcCode.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K679UE65G7;
+				GCC_PREFIX_HEADER = PersonaObjcCode/Core/Util/Macro/PrefixHeader.pch;
 				INFOPLIST_FILE = PersonaObjcCode/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -448,16 +1196,18 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhoushisong.PersonaObjcCode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		C15FE8F1242FAF6B00A851F1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8528F9A7F4C1341BD6C52E9E /* Pods-PersonaObjcCode.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K679UE65G7;
+				GCC_PREFIX_HEADER = PersonaObjcCode/Core/Util/Macro/PrefixHeader.pch;
 				INFOPLIST_FILE = PersonaObjcCode/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -465,7 +1215,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhoushisong.PersonaObjcCode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

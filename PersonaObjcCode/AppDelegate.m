@@ -7,8 +7,14 @@
 //
 
 #import "AppDelegate.h"
+#import "PERServices.h"
+#import "PERNavigater.h"
+#import "PERTTYLogger.h"
 
 @interface AppDelegate ()
+
+@property (nonatomic, strong) PERNavigater *navigater;
+@property (nonatomic, strong) PERServices *services;
 
 @end
 
@@ -16,26 +22,50 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    [self setupLog];
+    
+    PERUserModel *user = [[PERPersistentDataManager sharedManager] user];
+    NSString *token = [[PERPersistentDataManager sharedManager] token];
+    
+    self.services = [PERServices authenticatedClientWithUser:user token:token];
+    self.navigater = [[PERNavigater alloc] initWithServices:self.services];
+    self.services.network = [PERNetwork authenticatedClientWithUser:user token:token];
+    self.services.navigater = self.navigater;
+    
+    UIViewController *rootViewController = self.navigater.loginViewController;
+    if (self.services.isAuthenticated) {
+        [self.navigater resetRootViewModel];
+        rootViewController = self.navigater.rootViewController;
+    }
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.rootViewController = rootViewController;
+    [self.window makeKeyAndVisible];
+    
+    @weakify(self);
+    [self.services.signInSignal subscribeNext:^(id  _Nullable x) {
+        @strongify(self);
+        self.navigater = [[PERNavigater alloc] initWithServices:self.services];
+        self.services.navigater = self.navigater;
+        [self.navigater resetRootViewModel];
+        
+        self.window.rootViewController = self.navigater.rootViewController;
+    }];
+    
+    [self.services.signOutSignal subscribeNext:^(id  _Nullable x) {
+        @strongify(self);
+        self.navigater = [[PERNavigater alloc] initWithServices:self.services];
+        
+        self.window.rootViewController = self.navigater.loginViewController;;
+    }];
+
     return YES;
 }
 
-
-#pragma mark - UISceneSession lifecycle
-
-
-- (UISceneConfiguration *)application:(UIApplication *)application configurationForConnectingSceneSession:(UISceneSession *)connectingSceneSession options:(UISceneConnectionOptions *)options {
-    // Called when a new scene session is being created.
-    // Use this method to select a configuration to create the new scene with.
-    return [[UISceneConfiguration alloc] initWithName:@"Default Configuration" sessionRole:connectingSceneSession.role];
+- (void)setupLog {
+#ifdef DEBUG
+    [[PERLogManager sharedInstance] addLogger:[[PERTTYLogger alloc] init]];
+#endif
 }
-
-
-- (void)application:(UIApplication *)application didDiscardSceneSessions:(NSSet<UISceneSession *> *)sceneSessions {
-    // Called when the user discards a scene session.
-    // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
-    // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
-}
-
 
 @end
