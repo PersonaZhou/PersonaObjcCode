@@ -13,7 +13,7 @@
 @implementation PERNetwork (CustomTable)
 
 - (RACSignal *)fetchCustomTableBanner {
-    return [[[self requestPostWithPath:@"/customtable/record" contentType:PERRequestContentTypeJson parameters:@{}] parseClass:PERCustomTableBannerModel.class] delay:0.5f];
+    return [[[self requestPostWithPath:@"/customtable/record" contentType:PERRequestContentTypeJson parameters:nil] parseClass:PERCustomTableBannerModel.class] delay:0.5f];
 }
 
 - (RACSignal *)fetchCustomTableListWithPage:(NSUInteger)page pageSize:(NSUInteger)pageSize {

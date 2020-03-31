@@ -10,6 +10,10 @@
 		AB4419D3E6175BE869E06BF1 /* Pods_PersonaObjcCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8824EE6A9AA4D5E828E8547 /* Pods_PersonaObjcCode.framework */; };
 		C119FF9E24325C7B002A6B50 /* UIAlertController+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = C119FF9D24325C7B002A6B50 /* UIAlertController+Utility.m */; };
 		C119FFA32432610A002A6B50 /* PERUrlModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C119FFA22432610A002A6B50 /* PERUrlModel.m */; };
+		C119FFA82432DCF2002A6B50 /* PERNetwork+CustomTableMock.m in Sources */ = {isa = PBXBuildFile; fileRef = C119FFA72432DCF2002A6B50 /* PERNetwork+CustomTableMock.m */; };
+		C119FFAB2432DD01002A6B50 /* PERNetwork+HomeMock.m in Sources */ = {isa = PBXBuildFile; fileRef = C119FFAA2432DD01002A6B50 /* PERNetwork+HomeMock.m */; };
+		C119FFAE2432DD14002A6B50 /* PERNetwork+TextureMock.m in Sources */ = {isa = PBXBuildFile; fileRef = C119FFAD2432DD14002A6B50 /* PERNetwork+TextureMock.m */; };
+		C119FFB12432DD26002A6B50 /* PERNetwork+UserMock.m in Sources */ = {isa = PBXBuildFile; fileRef = C119FFB02432DD26002A6B50 /* PERNetwork+UserMock.m */; };
 		C15FE8C5242FAF6800A851F1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FE8C4242FAF6800A851F1 /* AppDelegate.m */; };
 		C15FE8CE242FAF6800A851F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C15FE8CC242FAF6800A851F1 /* Main.storyboard */; };
 		C15FE8D0242FAF6B00A851F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C15FE8CF242FAF6B00A851F1 /* Assets.xcassets */; };
@@ -109,6 +113,14 @@
 		C119FF9D24325C7B002A6B50 /* UIAlertController+Utility.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+Utility.m"; sourceTree = "<group>"; };
 		C119FFA12432610A002A6B50 /* PERUrlModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PERUrlModel.h; sourceTree = "<group>"; };
 		C119FFA22432610A002A6B50 /* PERUrlModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PERUrlModel.m; sourceTree = "<group>"; };
+		C119FFA62432DCF2002A6B50 /* PERNetwork+CustomTableMock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PERNetwork+CustomTableMock.h"; sourceTree = "<group>"; };
+		C119FFA72432DCF2002A6B50 /* PERNetwork+CustomTableMock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "PERNetwork+CustomTableMock.m"; sourceTree = "<group>"; };
+		C119FFA92432DD01002A6B50 /* PERNetwork+HomeMock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PERNetwork+HomeMock.h"; sourceTree = "<group>"; };
+		C119FFAA2432DD01002A6B50 /* PERNetwork+HomeMock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "PERNetwork+HomeMock.m"; sourceTree = "<group>"; };
+		C119FFAC2432DD14002A6B50 /* PERNetwork+TextureMock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PERNetwork+TextureMock.h"; sourceTree = "<group>"; };
+		C119FFAD2432DD14002A6B50 /* PERNetwork+TextureMock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "PERNetwork+TextureMock.m"; sourceTree = "<group>"; };
+		C119FFAF2432DD26002A6B50 /* PERNetwork+UserMock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PERNetwork+UserMock.h"; sourceTree = "<group>"; };
+		C119FFB02432DD26002A6B50 /* PERNetwork+UserMock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "PERNetwork+UserMock.m"; sourceTree = "<group>"; };
 		C15FE8C0242FAF6800A851F1 /* PersonaObjcCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonaObjcCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C15FE8C3242FAF6800A851F1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C15FE8C4242FAF6800A851F1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -651,6 +663,14 @@
 			children = (
 				C15FE96B242FB02800A851F1 /* PERNetwork+Mock.h */,
 				C15FE96A242FB02800A851F1 /* PERNetwork+Mock.m */,
+				C119FFA62432DCF2002A6B50 /* PERNetwork+CustomTableMock.h */,
+				C119FFA72432DCF2002A6B50 /* PERNetwork+CustomTableMock.m */,
+				C119FFA92432DD01002A6B50 /* PERNetwork+HomeMock.h */,
+				C119FFAA2432DD01002A6B50 /* PERNetwork+HomeMock.m */,
+				C119FFAC2432DD14002A6B50 /* PERNetwork+TextureMock.h */,
+				C119FFAD2432DD14002A6B50 /* PERNetwork+TextureMock.m */,
+				C119FFAF2432DD26002A6B50 /* PERNetwork+UserMock.h */,
+				C119FFB02432DD26002A6B50 /* PERNetwork+UserMock.m */,
 			);
 			path = Mock;
 			sourceTree = "<group>";
@@ -944,6 +964,7 @@
 				C15FEA07243222C000A851F1 /* PERRecordModel.m in Sources */,
 				C15FE9A3242FB02900A851F1 /* PERTextureViewController.m in Sources */,
 				C15FE992242FB02900A851F1 /* PERHomeModel.m in Sources */,
+				C119FFAB2432DD01002A6B50 /* PERNetwork+HomeMock.m in Sources */,
 				C15FE9C0242FB02900A851F1 /* PERViewController.m in Sources */,
 				C15FE9CC24308D7700A851F1 /* PERCarouselCollectionLayout.m in Sources */,
 				C15FE9C1242FB02900A851F1 /* PERNavigationController.m in Sources */,
@@ -977,6 +998,8 @@
 				C15FE99F242FB02900A851F1 /* PERTextureCommentNode.m in Sources */,
 				C15FE9B8242FB02900A851F1 /* PERNetwork+User.m in Sources */,
 				C119FF9E24325C7B002A6B50 /* UIAlertController+Utility.m in Sources */,
+				C119FFB12432DD26002A6B50 /* PERNetwork+UserMock.m in Sources */,
+				C119FFAE2432DD14002A6B50 /* PERNetwork+TextureMock.m in Sources */,
 				C15FE9BF242FB02900A851F1 /* PERListViewController.m in Sources */,
 				C15FE9BB242FB02900A851F1 /* PERServices.m in Sources */,
 				C15FE99D242FB02900A851F1 /* PERTextureModel.m in Sources */,
@@ -991,6 +1014,7 @@
 				C15FE9BA242FB02900A851F1 /* PERViewModel.m in Sources */,
 				C15FE9B7242FB02900A851F1 /* PERNetwork+CustomTable.m in Sources */,
 				C15FE8C5242FAF6800A851F1 /* AppDelegate.m in Sources */,
+				C119FFA82432DCF2002A6B50 /* PERNetwork+CustomTableMock.m in Sources */,
 				C15FE9D62430C63400A851F1 /* UIViewController+Utility.m in Sources */,
 				C119FFA32432610A002A6B50 /* PERUrlModel.m in Sources */,
 				C15FE9BE242FB02900A851F1 /* PERNavigater.m in Sources */,
