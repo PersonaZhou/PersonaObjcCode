@@ -46,14 +46,6 @@
     }];
 }
 
-- (void)bindEvent {
-    @weakify(self);
-    [[[NSNotificationCenter defaultCenter] rac_addObserverForName:UIDeviceOrientationDidChangeNotification object:nil] subscribeNext:^(NSNotification * _Nullable x) {
-        @strongify(self);
-        [self.view.yoga applyLayoutPreservingOrigin:YES];
-    }];
-}
-
 #pragma mark - tableView delegate
 
 
