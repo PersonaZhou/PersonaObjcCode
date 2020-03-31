@@ -8,19 +8,18 @@
 
 #import "PERYogaViewController.h"
 #import "PERYogaViewModel.h"
+#import "PERYogaUserInfoCell.h"
+#import "PERYogaOptionCell.h"
+#import "PERYogaInfoModel.h"
+#import "PERYogaOptionModel.h"
 
 #import <YogaKit/YGLayout.h>
 
-@interface PERYogaViewController ()
+@interface PERYogaViewController ()<UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) PERYogaViewModel *viewModel;
 
-@property (nonatomic, strong) UIView *headerView;
-@property (nonatomic, strong) UIImageView *avatarImageView;
-@property (nonatomic, strong) UIView *infoView;
-@property (nonatomic, strong) UILabel *nicknameLabel;
-@property (nonatomic, strong) UILabel *addressLabel;
-@property (nonatomic, strong) UILabel *emailLabel;
+@property (nonatomic, strong) UITableView *tableView;
 
 @end
 
@@ -30,9 +29,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"YogaKit";
-    [self setupView];
-    [self makeFlexBox];
-    [self bindEvent];
 }
 
 - (void)buildNavigaterRightBtnItem {
@@ -40,70 +36,14 @@
     self.navigationItem.rightBarButtonItems = @[documentItem];
 }
 
-- (void)setupView {
-    [self.view addSubview:self.headerView];
-    [self.headerView addSubview:self.avatarImageView];
-    [self.headerView addSubview:self.infoView];
-    [self.infoView addSubview:self.nicknameLabel];
-    [self.infoView addSubview:self.addressLabel];
-    [self.infoView addSubview:self.emailLabel];
+- (void)setupUI {
+    [self.view addSubview:self.tableView];
 }
 
-- (void)makeFlexBox {
-    [self.view configureLayoutWithBlock:^(YGLayout * layout) {
-        layout.isEnabled = YES;
-        layout.flexDirection = YGFlexDirectionRow;
-        layout.alignItems = YGAlignFlexStart;
+- (void)makeConstraints {
+    [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.mas_equalTo(UIEdgeInsetsZero);
     }];
-    
-    [self.headerView configureLayoutWithBlock:^(YGLayout * layout) {
-        layout.isEnabled = true;
-        layout.flexDirection = YGFlexDirectionRow;
-        layout.height = YGPointValue(120);
-        layout.top = YGPointValue(10);
-        layout.marginLeft = YGPointValue(12);
-        layout.marginRight = YGPointValue(12);
-        layout.padding =  YGPointValue(10);
-        layout.flexGrow = 2;
-    }];
-    
-    [self.infoView configureLayoutWithBlock:^(YGLayout * _Nonnull layout) {
-        layout.isEnabled = true;
-        layout.flexGrow = 10;
-        layout.padding = YGPointValue(5);
-        layout.flexDirection = YGFlexDirectionColumn;
-        layout.marginLeft = YGPointValue(5);
-    }];
-    
-    [self.avatarImageView configureLayoutWithBlock:^(YGLayout * layout) {
-        layout.isEnabled = YES;
-        layout.width = YGPointValue(60);
-        layout.height = YGPointValue(60);
-    }];
-    
-    [self.nicknameLabel configureLayoutWithBlock:^(YGLayout * layout) {
-        layout.isEnabled = YES;
-        layout.width = YGPointValue(80);
-        layout.height = YGPointValue(20);
-        layout.top = YGPointValue(5);
-        layout.marginBottom = YGPointValue(10);
-    }];
-    
-    [self.addressLabel configureLayoutWithBlock:^(YGLayout * _Nonnull layout) {
-        layout.isEnabled = YES;
-        layout.width = YGPointValue(200);
-        layout.height = YGPointValue(20);
-        layout.marginTop = YGPointValue(5);
-    }];
-    
-    [self.emailLabel configureLayoutWithBlock:^(YGLayout * _Nonnull layout) {
-        layout.isEnabled = YES;
-        layout.width = YGPointValue(200);
-        layout.height = YGPointValue(20);
-        layout.marginTop = YGPointValue(5);
-    }];
-    
-    [self.view.yoga applyLayoutPreservingOrigin:YES];
 }
 
 - (void)bindEvent {
@@ -114,67 +54,55 @@
     }];
 }
 
-- (UIView *)headerView {
-    if (_headerView) return _headerView;
-    
-    _headerView = UIView.new;
-    _headerView.backgroundColor = UIColorFromRGB(0xf3fffe);
-    _headerView.layer.borderColor = UIColorFromRGB(0x2a2d29).CGColor;
-    _headerView.layer.borderWidth = 1;
-    
-    return _headerView;
+#pragma mark - tableView delegate
+
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return self.viewModel.dataSource.count;
 }
 
-- (UIImageView *)avatarImageView {
-    if(_avatarImageView) return _avatarImageView;
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    id model = self.viewModel.dataSource[indexPath.row];
+    if ([model isKindOfClass:PERYogaInfoModel.class]) {
+        PERYogaUserInfoCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass(PERYogaUserInfoCell.class) forIndexPath:indexPath];
+        PERYogaInfoModel *m = (PERYogaInfoModel *)model;
+        [cell bindModel:m];
+        return cell;
+    }else if ([model isKindOfClass:PERYogaOptionModel.class]) {
+        PERYogaOptionCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass(PERYogaOptionCell.class) forIndexPath:indexPath];
+        PERYogaOptionModel *m = (PERYogaOptionModel *)model;
+        [cell bindModel:m];
+        return cell;
+    }
     
-    _avatarImageView = UIImageView.new;
-    [_avatarImageView sd_setImageWithURL:[NSURL URLWithString:@"https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2691192052,1821244895&fm=26&gp=0.jpg"]];
-    _avatarImageView.layer.cornerRadius = 5;
-    _avatarImageView.layer.masksToBounds = YES;
-    _avatarImageView.layer.borderWidth = 1;
-    _avatarImageView.layer.borderColor = UIColorFromRGB(0x7b7c77).CGColor;
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass(UITableViewCell.class) forIndexPath:indexPath];
     
-    return _avatarImageView;
+    return cell;
 }
 
-- (UIView *)infoView {
-    if (_infoView) return _infoView;
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    id model = self.viewModel.dataSource[indexPath.row];
+    if ([model isKindOfClass:PERYogaInfoModel.class]) {
+        return 150;
+    }else if ([model isKindOfClass:PERYogaOptionModel.class]) {
+        return 60;
+    }
     
-    _infoView = UIView.new;
-    _infoView.backgroundColor = UIColorFromRGB(0xc5cfce);
-    
-    return _infoView;
+    return 0;
 }
 
-- (UILabel *)nicknameLabel {
-    if (_nicknameLabel) return _nicknameLabel;
+- (UITableView *)tableView {
+    if (_tableView) return _tableView;
     
-    _nicknameLabel = UILabel.new;
-    _nicknameLabel.text = @"蕊希";
-    _nicknameLabel.font = [UIFont boldSystemFontOfSize:18];
+    _tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
+    _tableView.delegate = self;
+    _tableView.dataSource = self;
+    _tableView.separatorColor = UIColorFromRGB(0xececec);
+    [_tableView registerClass:PERYogaUserInfoCell.class forCellReuseIdentifier:NSStringFromClass(PERYogaUserInfoCell.class)];
+    [_tableView registerClass:PERYogaOptionCell.class forCellReuseIdentifier:NSStringFromClass(PERYogaOptionCell.class)];
+    [_tableView registerClass:UITableViewCell.class forCellReuseIdentifier:NSStringFromClass(UITableViewCell.class)];
     
-    return _nicknameLabel;
-}
-
-- (UILabel *)addressLabel {
-    if (_addressLabel) return _addressLabel;
-    
-    _addressLabel = UILabel.new;
-    _addressLabel.text = @"成都市高新区XXXX电台";
-    _addressLabel.font = [UIFont systemFontOfSize:15];
-    
-    return _addressLabel;
-}
-
-- (UILabel *)emailLabel {
-    if (_emailLabel) return _emailLabel;
-    
-    _emailLabel = UILabel.new;
-    _emailLabel.text = @"ruixi@126.com";
-    _emailLabel.font = [UIFont systemFontOfSize:15];
-    
-    return _emailLabel;
+    return _tableView;
 }
 
 /*

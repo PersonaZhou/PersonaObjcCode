@@ -30,7 +30,7 @@
     self.tableView = [[UITableView alloc] init];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
-    self.tableView.separatorColor = [UIColor colorWithRed:0.929 green:0.929 blue:0.929 alpha:1.00];
+    self.tableView.separatorColor = UIColorFromRGB(0xececec);
     [self.tableView setTableFooterView:[[UIView alloc] initWithFrame:CGRectZero]];
     [self.view addSubview:self.tableView];
     

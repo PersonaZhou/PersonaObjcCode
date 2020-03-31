@@ -16,6 +16,8 @@
 		C119FFB12432DD26002A6B50 /* PERNetwork+UserMock.m in Sources */ = {isa = PBXBuildFile; fileRef = C119FFB02432DD26002A6B50 /* PERNetwork+UserMock.m */; };
 		C119FFB42432E27C002A6B50 /* PERYogaUserInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C119FFB32432E27C002A6B50 /* PERYogaUserInfoCell.m */; };
 		C119FFB72432E2A0002A6B50 /* PERYogaOptionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C119FFB62432E2A0002A6B50 /* PERYogaOptionCell.m */; };
+		C119FFBA24332FC0002A6B50 /* PERYogaInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C119FFB924332FC0002A6B50 /* PERYogaInfoModel.m */; };
+		C119FFBD24332FD1002A6B50 /* PERYogaOptionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C119FFBC24332FD1002A6B50 /* PERYogaOptionModel.m */; };
 		C15FE8C5242FAF6800A851F1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FE8C4242FAF6800A851F1 /* AppDelegate.m */; };
 		C15FE8CE242FAF6800A851F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C15FE8CC242FAF6800A851F1 /* Main.storyboard */; };
 		C15FE8D0242FAF6B00A851F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C15FE8CF242FAF6B00A851F1 /* Assets.xcassets */; };
@@ -127,7 +129,11 @@
 		C119FFB32432E27C002A6B50 /* PERYogaUserInfoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PERYogaUserInfoCell.m; sourceTree = "<group>"; };
 		C119FFB52432E2A0002A6B50 /* PERYogaOptionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PERYogaOptionCell.h; sourceTree = "<group>"; };
 		C119FFB62432E2A0002A6B50 /* PERYogaOptionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PERYogaOptionCell.m; sourceTree = "<group>"; };
-		C15FE8C0242FAF6800A851F1 /* PersonaObjcCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonaObjcCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C119FFB824332FC0002A6B50 /* PERYogaInfoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PERYogaInfoModel.h; sourceTree = "<group>"; };
+		C119FFB924332FC0002A6B50 /* PERYogaInfoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PERYogaInfoModel.m; sourceTree = "<group>"; };
+		C119FFBB24332FD1002A6B50 /* PERYogaOptionModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PERYogaOptionModel.h; sourceTree = "<group>"; };
+		C119FFBC24332FD1002A6B50 /* PERYogaOptionModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PERYogaOptionModel.m; sourceTree = "<group>"; };
+		C15FE8C0242FAF6800A851F1 /* Persona.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Persona.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C15FE8C3242FAF6800A851F1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C15FE8C4242FAF6800A851F1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		C15FE8CD242FAF6800A851F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -332,6 +338,10 @@
 		C119FFA52432D9DF002A6B50 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C119FFB824332FC0002A6B50 /* PERYogaInfoModel.h */,
+				C119FFB924332FC0002A6B50 /* PERYogaInfoModel.m */,
+				C119FFBB24332FD1002A6B50 /* PERYogaOptionModel.h */,
+				C119FFBC24332FD1002A6B50 /* PERYogaOptionModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -351,7 +361,7 @@
 		C15FE8C1242FAF6800A851F1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C15FE8C0242FAF6800A851F1 /* PersonaObjcCode.app */,
+				C15FE8C0242FAF6800A851F1 /* Persona.app */,
 				C15FE8DB242FAF6B00A851F1 /* PersonaObjcCodeTests.xctest */,
 				C15FE8E6242FAF6B00A851F1 /* PersonaObjcCodeUITests.xctest */,
 			);
@@ -811,7 +821,7 @@
 			);
 			name = PersonaObjcCode;
 			productName = PersonaObjcCode;
-			productReference = C15FE8C0242FAF6800A851F1 /* PersonaObjcCode.app */;
+			productReference = C15FE8C0242FAF6800A851F1 /* Persona.app */;
 			productType = "com.apple.product-type.application";
 		};
 		C15FE8DA242FAF6B00A851F1 /* PersonaObjcCodeTests */ = {
@@ -996,6 +1006,7 @@
 				C15FE9C924308D4000A851F1 /* PERCarouselView.m in Sources */,
 				C15FE9A1242FB02900A851F1 /* PERTextureCellNode.m in Sources */,
 				C15FE9D224308DDA00A851F1 /* PERCarouselPageView.m in Sources */,
+				C119FFBD24332FD1002A6B50 /* PERYogaOptionModel.m in Sources */,
 				C15FE9FE24320C6A00A851F1 /* PERRecordView.m in Sources */,
 				C15FE9A2242FB02900A851F1 /* PERTextureMutilImageCellNode.m in Sources */,
 				C15FEA0A24324ED800A851F1 /* UIBarButtonItem+Utility.m in Sources */,
@@ -1012,6 +1023,7 @@
 				C119FFB12432DD26002A6B50 /* PERNetwork+UserMock.m in Sources */,
 				C119FFB42432E27C002A6B50 /* PERYogaUserInfoCell.m in Sources */,
 				C119FFAE2432DD14002A6B50 /* PERNetwork+TextureMock.m in Sources */,
+				C119FFBA24332FC0002A6B50 /* PERYogaInfoModel.m in Sources */,
 				C15FE9BF242FB02900A851F1 /* PERListViewController.m in Sources */,
 				C15FE9BB242FB02900A851F1 /* PERServices.m in Sources */,
 				C15FE99D242FB02900A851F1 /* PERTextureModel.m in Sources */,
@@ -1220,7 +1232,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhoushisong.PersonaObjcCode;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Persona;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -1239,7 +1251,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhoushisong.PersonaObjcCode;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Persona;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

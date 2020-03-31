@@ -7,10 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PERYogaInfoModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface PERYogaUserInfoCell : UITableViewCell
+
+- (void)bindModel:(PERYogaInfoModel *)model;
 
 @end
 

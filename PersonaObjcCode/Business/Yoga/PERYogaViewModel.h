@@ -14,6 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, copy) NSString *documentUrl;
 
+@property (nonatomic, copy, readonly) NSArray *dataSource;
+
 @end
 
 NS_ASSUME_NONNULL_END
