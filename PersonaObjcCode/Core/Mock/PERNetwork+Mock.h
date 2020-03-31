@@ -17,7 +17,7 @@ typedef NS_OPTIONS(NSInteger, PERRequestContentType){
 
 @interface PERNetwork (Mock)
 
-- (RACSignal *)requestPostWithPath:(NSString *)path contentType:(PERRequestContentType)type parameters:(NSDictionary *)parameters;
+- (RACSignal *)requestPostWithPath:(NSString *)path contentType:(PERRequestContentType)type parameters:(nullable NSDictionary *)parameters;
 
 @end
 

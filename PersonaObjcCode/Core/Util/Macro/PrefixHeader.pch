@@ -22,6 +22,11 @@
 #import <YogaKit/YGLayout.h>
 #import <AXWebViewController/AXWebViewController.h>
 
+#ifdef DEBUG
+#import <DoraemonKit/DoraemonManager.h>
+#endif
+
+
 #import "PERNetwork.h"
 #import "PERMacro.h"
 #import "PERPersistentDataManager.h"

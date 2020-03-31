@@ -25,6 +25,7 @@
     [NSThread sleepForTimeInterval:1];
     
     [self setupLog];
+    [self setupDoraemon];
     
     PERUserModel *user = [[PERPersistentDataManager sharedManager] user];
     NSString *token = [[PERPersistentDataManager sharedManager] token];
@@ -67,6 +68,12 @@
 - (void)setupLog {
 #ifdef DEBUG
     [[PERLogManager sharedInstance] addLogger:[[PERTTYLogger alloc] init]];
+#endif
+}
+
+- (void)setupDoraemon {
+#ifdef DEBUG
+    [[DoraemonManager shareInstance] installWithPid:@"46c5f8314f19de21df7a172da340eb72"];
 #endif
 }
 

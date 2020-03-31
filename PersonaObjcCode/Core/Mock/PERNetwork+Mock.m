@@ -18,6 +18,8 @@
     
     RACSignal *s = [RACSignal empty];
     
+    PERLogD(@"%@ \n path:%@ \n parameters:%@", @"------------ Request ------------ ", path, parameters);
+    
     if ([path isEqualToString:@"/login/send_sms_code"]) {
         s = [self fetchSMSCodeWithParameters:parameters];
     }else if ([path isEqualToString:@"/login/sigin_by_sms_code"]) {
@@ -34,7 +36,9 @@
         s = [self fetchCustomTableList:parameters];
     }
     
-    return s;
+    return [s doNext:^(id  _Nullable x) {
+        PERLogD(@"%@ \n path:%@ \n result:%@", @"------------ Response ------------ ", path, x);
+    }];
 }
 
 @end

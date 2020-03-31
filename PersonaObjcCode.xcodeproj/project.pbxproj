@@ -14,6 +14,8 @@
 		C119FFAB2432DD01002A6B50 /* PERNetwork+HomeMock.m in Sources */ = {isa = PBXBuildFile; fileRef = C119FFAA2432DD01002A6B50 /* PERNetwork+HomeMock.m */; };
 		C119FFAE2432DD14002A6B50 /* PERNetwork+TextureMock.m in Sources */ = {isa = PBXBuildFile; fileRef = C119FFAD2432DD14002A6B50 /* PERNetwork+TextureMock.m */; };
 		C119FFB12432DD26002A6B50 /* PERNetwork+UserMock.m in Sources */ = {isa = PBXBuildFile; fileRef = C119FFB02432DD26002A6B50 /* PERNetwork+UserMock.m */; };
+		C119FFB42432E27C002A6B50 /* PERYogaUserInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C119FFB32432E27C002A6B50 /* PERYogaUserInfoCell.m */; };
+		C119FFB72432E2A0002A6B50 /* PERYogaOptionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C119FFB62432E2A0002A6B50 /* PERYogaOptionCell.m */; };
 		C15FE8C5242FAF6800A851F1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FE8C4242FAF6800A851F1 /* AppDelegate.m */; };
 		C15FE8CE242FAF6800A851F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C15FE8CC242FAF6800A851F1 /* Main.storyboard */; };
 		C15FE8D0242FAF6B00A851F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C15FE8CF242FAF6B00A851F1 /* Assets.xcassets */; };
@@ -121,6 +123,10 @@
 		C119FFAD2432DD14002A6B50 /* PERNetwork+TextureMock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "PERNetwork+TextureMock.m"; sourceTree = "<group>"; };
 		C119FFAF2432DD26002A6B50 /* PERNetwork+UserMock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PERNetwork+UserMock.h"; sourceTree = "<group>"; };
 		C119FFB02432DD26002A6B50 /* PERNetwork+UserMock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "PERNetwork+UserMock.m"; sourceTree = "<group>"; };
+		C119FFB22432E27C002A6B50 /* PERYogaUserInfoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PERYogaUserInfoCell.h; sourceTree = "<group>"; };
+		C119FFB32432E27C002A6B50 /* PERYogaUserInfoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PERYogaUserInfoCell.m; sourceTree = "<group>"; };
+		C119FFB52432E2A0002A6B50 /* PERYogaOptionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PERYogaOptionCell.h; sourceTree = "<group>"; };
+		C119FFB62432E2A0002A6B50 /* PERYogaOptionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PERYogaOptionCell.m; sourceTree = "<group>"; };
 		C15FE8C0242FAF6800A851F1 /* PersonaObjcCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonaObjcCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C15FE8C3242FAF6800A851F1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C15FE8C4242FAF6800A851F1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -315,6 +321,10 @@
 		C119FFA42432D9D8002A6B50 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C119FFB22432E27C002A6B50 /* PERYogaUserInfoCell.h */,
+				C119FFB32432E27C002A6B50 /* PERYogaUserInfoCell.m */,
+				C119FFB52432E2A0002A6B50 /* PERYogaOptionCell.h */,
+				C119FFB62432E2A0002A6B50 /* PERYogaOptionCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -846,6 +856,7 @@
 		C15FE8B8242FAF6800A851F1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = PER;
 				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = ZhouShisong;
 				TargetAttributes = {
@@ -999,6 +1010,7 @@
 				C15FE9B8242FB02900A851F1 /* PERNetwork+User.m in Sources */,
 				C119FF9E24325C7B002A6B50 /* UIAlertController+Utility.m in Sources */,
 				C119FFB12432DD26002A6B50 /* PERNetwork+UserMock.m in Sources */,
+				C119FFB42432E27C002A6B50 /* PERYogaUserInfoCell.m in Sources */,
 				C119FFAE2432DD14002A6B50 /* PERNetwork+TextureMock.m in Sources */,
 				C15FE9BF242FB02900A851F1 /* PERListViewController.m in Sources */,
 				C15FE9BB242FB02900A851F1 /* PERServices.m in Sources */,
@@ -1006,6 +1018,7 @@
 				C15FE991242FB02900A851F1 /* PERHomeViewModel.m in Sources */,
 				C15FE9B1242FB02900A851F1 /* RACSignal+JSONParser.m in Sources */,
 				C15FE9AA242FB02900A851F1 /* PERLoginViewController.m in Sources */,
+				C119FFB72432E2A0002A6B50 /* PERYogaOptionCell.m in Sources */,
 				C15FE9B4242FB02900A851F1 /* PERTTYLogger.m in Sources */,
 				C15FE9A6242FB02900A851F1 /* PERCustomListCell.m in Sources */,
 				C15FEA0424320CF800A851F1 /* PERRecordViewCell.m in Sources */,

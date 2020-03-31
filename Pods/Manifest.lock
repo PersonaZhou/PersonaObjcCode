@@ -24,6 +24,32 @@ PODS:
     - AXNavigationBackItemInjection
     - AXPracticalHUD
     - NJKWebViewProgress
+  - CocoaLumberjack (3.6.1):
+    - CocoaLumberjack/Core (= 3.6.1)
+  - CocoaLumberjack/Core (3.6.1)
+  - DoraemonKit/Core (3.0.0)
+  - DoraemonKit/WithDatabase (3.0.0):
+    - DoraemonKit/Core
+    - YYDebugDatabase
+  - DoraemonKit/WithGPS (3.0.0):
+    - DoraemonKit/Core
+  - DoraemonKit/WithLoad (3.0.0):
+    - DoraemonKit/Core
+  - DoraemonKit/WithLogger (3.0.0):
+    - CocoaLumberjack
+    - DoraemonKit/Core
+  - DoraemonKit/WithMLeaksFinder (3.0.0):
+    - DoraemonKit/Core
+  - DoraemonKit/WithWeex (3.0.0):
+    - DoraemonKit/Core
+    - WeexSDK
+    - WXDevtool
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
+  - GCDWebServer (3.5.4):
+    - GCDWebServer/Core (= 3.5.4)
+  - GCDWebServer/Core (3.5.4)
   - Masonry (1.1.0)
   - MBProgressHUD (1.2.0)
   - MJRefresh (3.0.8)
@@ -51,6 +77,7 @@ PODS:
   - SDWebImage (5.6.1):
     - SDWebImage/Core (= 5.6.1)
   - SDWebImage/Core (5.6.1)
+  - SocketRocket (0.5.1)
   - Texture (2.8.1):
     - Texture/AssetsLibrary (= 2.8.1)
     - Texture/Core (= 2.8.1)
@@ -72,14 +99,28 @@ PODS:
   - Texture/Video (2.8.1):
     - Texture/Core
   - Toast (4.0.0)
+  - WeexSDK (0.28.0)
+  - WXDevtool (0.24.0):
+    - SocketRocket
+    - WeexSDK
   - Yoga (1.14.0)
   - YogaKit (1.18.1):
     - Yoga (~> 1.14)
+  - YYDebugDatabase (2.0.8):
+    - FMDB
+    - GCDWebServer
   - YYModel (1.0.4)
 
 DEPENDENCIES:
   - AFNetworking
   - AXWebViewController
+  - DoraemonKit/Core (from `https://github.com/didi/DoraemonKit.git`, tag `3.0.0`)
+  - DoraemonKit/WithDatabase (from `https://github.com/didi/DoraemonKit.git`, tag `3.0.0`)
+  - DoraemonKit/WithGPS (from `https://github.com/didi/DoraemonKit.git`, tag `3.0.0`)
+  - DoraemonKit/WithLoad (from `https://github.com/didi/DoraemonKit.git`, tag `3.0.0`)
+  - DoraemonKit/WithLogger (from `https://github.com/didi/DoraemonKit.git`, tag `3.0.0`)
+  - DoraemonKit/WithMLeaksFinder (from `https://github.com/didi/DoraemonKit.git`, tag `3.0.0`)
+  - DoraemonKit/WithWeex (from `https://github.com/didi/DoraemonKit.git`, tag `3.0.0`)
   - Masonry
   - MBProgressHUD
   - MJRefresh (= 3.0.8)
@@ -91,6 +132,14 @@ DEPENDENCIES:
   - YYModel
 
 SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - CocoaLumberjack
+    - FMDB
+    - GCDWebServer
+    - SocketRocket
+    - WeexSDK
+    - WXDevtool
+    - YYDebugDatabase
   https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git:
     - AFNetworking
     - Aspects
@@ -113,6 +162,16 @@ SPEC REPOS:
     - YogaKit
     - YYModel
 
+EXTERNAL SOURCES:
+  DoraemonKit:
+    :git: https://github.com/didi/DoraemonKit.git
+    :tag: 3.0.0
+
+CHECKOUT OPTIONS:
+  DoraemonKit:
+    :git: https://github.com/didi/DoraemonKit.git
+    :tag: 3.0.0
+
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
@@ -120,6 +179,10 @@ SPEC CHECKSUMS:
   AXNavigationBackItemInjection: efe0446967f3cbcc85a9118decd1e145138912dd
   AXPracticalHUD: 821d170b31e050c426ef8754b07b4264a8b1d861
   AXWebViewController: 96566c473fce2806f4da696132b31777f5404c9f
+  CocoaLumberjack: b17ae15142558d08bbacf69775fa10c4abbebcc9
+  DoraemonKit: 4ad75a74374d836425e947f0f891157cacfdcf46
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  GCDWebServer: 2c156a56c8226e2d5c0c3f208a3621ccffbe3ce4
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   MJRefresh: fafde8f18f4afd66b434331a9beb67a6c0264056
@@ -129,12 +192,16 @@ SPEC CHECKSUMS:
   PINRemoteImage: d6d51c5d2adda55f1ce30c96e850b6c4ebd2856a
   ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
   SDWebImage: 7edb9c3ea661e77a66661f7f044de8c1b55d1120
+  SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
   Texture: 8ecf6984065a1e54f06bf97b349ecca28582acd7
   Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
+  WeexSDK: 78861d2f8b78f67e30580c15a54f5b420456db39
+  WXDevtool: 95b70c73c06fc3299d65bd53ba4b3e0b0087f3cb
   Yoga: cff67a400f6b74dc38eb0bad4f156673d9aa980c
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
+  YYDebugDatabase: 037486297a7dd40bc50e2c6df5de7b4ad24c9c17
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 4621527a96600cda7c7f404d31d9d7645f260dd0
+PODFILE CHECKSUM: a523fc5dc5f8d4c4c656baf53911071638520134
 
 COCOAPODS: 1.9.1

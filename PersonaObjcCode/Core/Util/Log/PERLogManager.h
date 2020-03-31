@@ -30,7 +30,7 @@ typedef enum {
 - (void)addLogger:(id<PERLogger>)logger;
 - (void)removeLoger:(id<PERLogger>)logger;
 
-- (void)writeWithType:(NSInteger)type atLevel:(NSInteger)level file:(const char *)file function:(const char *)function line:(NSUInteger)line format:(NSString*)format,...;
+- (void)writeWithType:(NSInteger)type atLevel:(NSInteger)level file:(const char *)file function:(const char *)function line:(NSUInteger)line format:(NSString *)format,...;
 
 @end
 

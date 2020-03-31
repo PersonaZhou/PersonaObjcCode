@@ -1,6 +1,7 @@
 platform:ios, '10.0'
 
-source 'https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git'
+ source 'https://github.com/CocoaPods/Specs.git'
+ source 'https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git'
 
 use_frameworks!
 
@@ -16,6 +17,14 @@ def app_pods
     pod 'Texture'
     pod 'YogaKit'
     pod 'AXWebViewController'
+    
+    pod 'DoraemonKit/Core', :git => "https://github.com/didi/DoraemonKit.git", :tag => '3.0.0', :configurations => ['Debug']
+    pod 'DoraemonKit/WithLogger', :git => "https://github.com/didi/DoraemonKit.git", :tag => '3.0.0', :configurations => ['Debug']
+    pod 'DoraemonKit/WithGPS', :git => "https://github.com/didi/DoraemonKit.git", :tag => '3.0.0', :configurations => ['Debug']
+    pod 'DoraemonKit/WithLoad', :git => "https://github.com/didi/DoraemonKit.git", :tag => '3.0.0', :configurations => ['Debug']
+    pod 'DoraemonKit/WithDatabase', :git => "https://github.com/didi/DoraemonKit.git", :tag => '3.0.0', :configurations => ['Debug']
+    pod 'DoraemonKit/WithMLeaksFinder', :git => "https://github.com/didi/DoraemonKit.git", :tag => '3.0.0', :configurations => ['Debug']
+    pod 'DoraemonKit/WithWeex', :git => "https://github.com/didi/DoraemonKit.git", :tag => '3.0.0', :configurations => ['Debug']
 end
 
 target 'PersonaObjcCode' do
