@@ -10,6 +10,7 @@
 #import "PERCarouselPageView.h"
 #import "PERCarouselCollectionViewCell.h"
 #import "PERCarouselCollectionLayout.h"
+#import "WKWebView+Utility.h"
 
 static const int groupCount = 101; //最好奇数（定位到中间）  如：3，5，11~51，101
 static const float timerInterval = 3.0f;
@@ -173,13 +174,7 @@ static const float timerInterval = 3.0f;
     NSInteger index = indexPath.row % self.dataSource.count;
     if (index < self.dataSource.count) {
         PERCarouselViewModel *model = self.dataSource[index];
-        
-        AXWebViewController *webVC = [[AXWebViewController alloc] initWithAddress:model.url];
-        webVC.showsToolBar = YES;
-        webVC.navigationController.navigationBar.translucent = NO;
-        
-        UIViewController *currentVC = [UIViewController getCurrentVC];
-        [currentVC presentViewController:webVC animated:YES completion:nil];
+        [WKWebView openUrl:model.url];
     }
 }
 

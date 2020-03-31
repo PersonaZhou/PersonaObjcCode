@@ -14,4 +14,8 @@
 
 @implementation PERHomeListItem
 
++ (NSDictionary *)modelContainerPropertyGenericClass {
+    return @{@"urls": PERUrlModel.class};
+}
+
 @end

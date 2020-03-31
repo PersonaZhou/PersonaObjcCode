@@ -22,6 +22,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSString *title;
 @property (nonatomic, copy) NSString *introduction;
 @property (nonatomic, copy) NSString *url;
+@property (nonatomic, copy) NSArray<PERUrlModel *> *urls;
 
 @end
 

@@ -7,11 +7,9 @@
 //
 
 #import "PERHomeViewModel.h"
-#import "PERDetailViewModel.h"
 #import "PERNetwork+Home.h"
 #import "PERHomeViewBannerCell.h"
 #import "PERHomeViewListCell.h"
-#import "PERDemoViewModel.h"
 
 @implementation PERHomeViewModel
 @synthesize selectCommand = _selectCommand;
@@ -51,11 +49,11 @@
             @strongify(self);
             if ([viewModel isKindOfClass:PERHomeViewListCellViewModel.class]) {
                 PERHomeViewListCellViewModel *vm = (PERHomeViewListCellViewModel *)viewModel;
-                [self.services.navigater openURL:vm.item.url];
-            }else if ([viewModel isKindOfClass:PERHomeViewBannerCellViewModel.class]) {
-//                PERDemoViewModel *vm = [[PERDemoViewModel alloc] initWithServices:self.services];
-//                [self.services.navigater pushViewModel:vm animated:YES];
-                [self.services.navigater openURL:@"persona://code/demo"];
+                if (vm.item.url && vm.item.url.length > 0) {
+                    [self.services.navigater openURL:vm.item.url];
+                }else if (vm.item.urls && vm.item.urls.count > 0) {
+                    [UIAlertController showActionSheetWithTitle:nil message:nil url:vm.item.urls];
+                }
             }
             
             return [RACSignal empty];

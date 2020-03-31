@@ -1,18 +1,19 @@
 //
-//  PERDetailViewModel.h
+//  PERUrlModel.h
 //  PersonaObjcCode
 //
-//  Created by Persona on 2020/1/5.
+//  Created by ZhouShisong on 2020/3/31.
 //  Copyright © 2020 ZhouShisong. All rights reserved.
 //
 
-#import "PERViewModel.h"
+#import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface PERDetailViewModel : PERViewModel
+@interface PERUrlModel : NSObject
 
 @property (nonatomic, copy) NSString *title;
+@property (nonatomic, copy) NSString *url;
 
 @end
 

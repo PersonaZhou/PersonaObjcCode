@@ -42,6 +42,8 @@
         [self buildNavigaterBackBtnItem];
     }
     
+    [self buildNavigaterRightBtnItem];
+    
     [self setupUI];
     [self makeConstraints];
     [self bindEvent];
@@ -83,7 +85,7 @@
 - (void)buildNavigaterBackBtnItem {
     UIButton *leftButton = [UIButton buttonWithType:UIButtonTypeCustom];
     leftButton.bounds = CGRectMake(0, 0, 15, 20);
-    leftButton.backgroundColor =[UIColor clearColor];
+    leftButton.backgroundColor = [UIColor clearColor];
     [leftButton setBackgroundImage:[UIImage imageNamed:@"nav_back"] forState:UIControlStateNormal];
     
     @weakify(self);
@@ -95,6 +97,10 @@
     
     UIBarButtonItem *leftBarButton = [[UIBarButtonItem alloc] initWithCustomView:leftButton];
     self.navigationItem.leftBarButtonItem = leftBarButton;
+}
+
+- (void)buildNavigaterRightBtnItem {
+    
 }
 
 /*

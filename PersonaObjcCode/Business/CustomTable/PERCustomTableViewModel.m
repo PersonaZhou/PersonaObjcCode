@@ -13,6 +13,7 @@
 
 @implementation PERCustomTableViewModel
 @synthesize selectCommand = _selectCommand;
+@synthesize documentUrl = _documentUrl;
 
 - (nonnull RACSignal *)loadDataFromPage:(NSUInteger)page perPage:(NSUInteger)perPage {
     @weakify(self);
@@ -53,6 +54,10 @@
     }
     
     return _selectCommand;
+}
+
+- (NSString *)documentUrl {
+    return nil;
 }
 
 

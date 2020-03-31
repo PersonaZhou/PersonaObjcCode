@@ -22,6 +22,8 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [NSThread sleepForTimeInterval:1];
+    
     [self setupLog];
     
     PERUserModel *user = [[PERPersistentDataManager sharedManager] user];

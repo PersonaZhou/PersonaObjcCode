@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		AB4419D3E6175BE869E06BF1 /* Pods_PersonaObjcCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8824EE6A9AA4D5E828E8547 /* Pods_PersonaObjcCode.framework */; };
+		C119FF9E24325C7B002A6B50 /* UIAlertController+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = C119FF9D24325C7B002A6B50 /* UIAlertController+Utility.m */; };
+		C119FFA32432610A002A6B50 /* PERUrlModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C119FFA22432610A002A6B50 /* PERUrlModel.m */; };
 		C15FE8C5242FAF6800A851F1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FE8C4242FAF6800A851F1 /* AppDelegate.m */; };
 		C15FE8CE242FAF6800A851F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C15FE8CC242FAF6800A851F1 /* Main.storyboard */; };
 		C15FE8D0242FAF6B00A851F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C15FE8CF242FAF6B00A851F1 /* Assets.xcassets */; };
@@ -16,10 +18,6 @@
 		C15FE8E0242FAF6B00A851F1 /* PersonaObjcCodeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FE8DF242FAF6B00A851F1 /* PersonaObjcCodeTests.m */; };
 		C15FE8EB242FAF6B00A851F1 /* PersonaObjcCodeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FE8EA242FAF6B00A851F1 /* PersonaObjcCodeUITests.m */; };
 		C15FE98B242FB02900A851F1 /* image_loading.gif in Resources */ = {isa = PBXBuildFile; fileRef = C15FE8F9242FB02700A851F1 /* image_loading.gif */; };
-		C15FE98C242FB02900A851F1 /* PERDemoViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FE8FC242FB02800A851F1 /* PERDemoViewModel.m */; };
-		C15FE98D242FB02900A851F1 /* PERDemoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FE8FF242FB02800A851F1 /* PERDemoModel.m */; };
-		C15FE98E242FB02900A851F1 /* PERDemoViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FE903242FB02800A851F1 /* PERDemoViewCell.m */; };
-		C15FE98F242FB02900A851F1 /* PERDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FE905242FB02800A851F1 /* PERDemoViewController.m */; };
 		C15FE990242FB02900A851F1 /* PERHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FE908242FB02800A851F1 /* PERHomeViewController.m */; };
 		C15FE991242FB02900A851F1 /* PERHomeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FE909242FB02800A851F1 /* PERHomeViewModel.m */; };
 		C15FE992242FB02900A851F1 /* PERHomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FE90B242FB02800A851F1 /* PERHomeModel.m */; };
@@ -27,8 +25,6 @@
 		C15FE994242FB02900A851F1 /* PERHomeViewListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FE90F242FB02800A851F1 /* PERHomeViewListCell.m */; };
 		C15FE995242FB02900A851F1 /* PERYogaViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FE915242FB02800A851F1 /* PERYogaViewModel.m */; };
 		C15FE996242FB02900A851F1 /* PERYogaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FE916242FB02800A851F1 /* PERYogaViewController.m */; };
-		C15FE997242FB02900A851F1 /* PERDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FE919242FB02800A851F1 /* PERDetailViewController.m */; };
-		C15FE998242FB02900A851F1 /* PERDetailViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FE91C242FB02800A851F1 /* PERDetailViewModel.m */; };
 		C15FE999242FB02900A851F1 /* PERMineViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FE91F242FB02800A851F1 /* PERMineViewModel.m */; };
 		C15FE99A242FB02900A851F1 /* PERMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FE920242FB02800A851F1 /* PERMineViewController.m */; };
 		C15FE99B242FB02900A851F1 /* PERUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FE923242FB02800A851F1 /* PERUserModel.m */; };
@@ -84,6 +80,8 @@
 		C15FEA0124320CD900A851F1 /* PERRecordViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FEA0024320CD900A851F1 /* PERRecordViewLayout.m */; };
 		C15FEA0424320CF800A851F1 /* PERRecordViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FEA0324320CF800A851F1 /* PERRecordViewCell.m */; };
 		C15FEA07243222C000A851F1 /* PERRecordModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FEA06243222C000A851F1 /* PERRecordModel.m */; };
+		C15FEA0A24324ED800A851F1 /* UIBarButtonItem+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FEA0924324ED800A851F1 /* UIBarButtonItem+Utility.m */; };
+		C15FEA0D243253F300A851F1 /* WKWebView+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FEA0C243253F300A851F1 /* WKWebView+Utility.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +105,10 @@
 		5C82678F95B7ED3162A30E13 /* Pods-PersonaObjcCode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PersonaObjcCode.debug.xcconfig"; path = "Target Support Files/Pods-PersonaObjcCode/Pods-PersonaObjcCode.debug.xcconfig"; sourceTree = "<group>"; };
 		8528F9A7F4C1341BD6C52E9E /* Pods-PersonaObjcCode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PersonaObjcCode.release.xcconfig"; path = "Target Support Files/Pods-PersonaObjcCode/Pods-PersonaObjcCode.release.xcconfig"; sourceTree = "<group>"; };
 		A8824EE6A9AA4D5E828E8547 /* Pods_PersonaObjcCode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PersonaObjcCode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C119FF9C24325C7B002A6B50 /* UIAlertController+Utility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+Utility.h"; sourceTree = "<group>"; };
+		C119FF9D24325C7B002A6B50 /* UIAlertController+Utility.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+Utility.m"; sourceTree = "<group>"; };
+		C119FFA12432610A002A6B50 /* PERUrlModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PERUrlModel.h; sourceTree = "<group>"; };
+		C119FFA22432610A002A6B50 /* PERUrlModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PERUrlModel.m; sourceTree = "<group>"; };
 		C15FE8C0242FAF6800A851F1 /* PersonaObjcCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonaObjcCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C15FE8C3242FAF6800A851F1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C15FE8C4242FAF6800A851F1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -122,14 +124,6 @@
 		C15FE8EA242FAF6B00A851F1 /* PersonaObjcCodeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonaObjcCodeUITests.m; sourceTree = "<group>"; };
 		C15FE8EC242FAF6B00A851F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C15FE8F9242FB02700A851F1 /* image_loading.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = image_loading.gif; sourceTree = "<group>"; };
-		C15FE8FC242FB02800A851F1 /* PERDemoViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PERDemoViewModel.m; sourceTree = "<group>"; };
-		C15FE8FD242FB02800A851F1 /* PERDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PERDemoViewController.h; sourceTree = "<group>"; };
-		C15FE8FF242FB02800A851F1 /* PERDemoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PERDemoModel.m; sourceTree = "<group>"; };
-		C15FE900242FB02800A851F1 /* PERDemoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PERDemoModel.h; sourceTree = "<group>"; };
-		C15FE902242FB02800A851F1 /* PERDemoViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PERDemoViewCell.h; sourceTree = "<group>"; };
-		C15FE903242FB02800A851F1 /* PERDemoViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PERDemoViewCell.m; sourceTree = "<group>"; };
-		C15FE904242FB02800A851F1 /* PERDemoViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PERDemoViewModel.h; sourceTree = "<group>"; };
-		C15FE905242FB02800A851F1 /* PERDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PERDemoViewController.m; sourceTree = "<group>"; };
 		C15FE907242FB02800A851F1 /* PERHomeViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PERHomeViewModel.h; sourceTree = "<group>"; };
 		C15FE908242FB02800A851F1 /* PERHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PERHomeViewController.m; sourceTree = "<group>"; };
 		C15FE909242FB02800A851F1 /* PERHomeViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PERHomeViewModel.m; sourceTree = "<group>"; };
@@ -144,10 +138,6 @@
 		C15FE915242FB02800A851F1 /* PERYogaViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PERYogaViewModel.m; sourceTree = "<group>"; };
 		C15FE916242FB02800A851F1 /* PERYogaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PERYogaViewController.m; sourceTree = "<group>"; };
 		C15FE917242FB02800A851F1 /* PERYogaViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PERYogaViewModel.h; sourceTree = "<group>"; };
-		C15FE919242FB02800A851F1 /* PERDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PERDetailViewController.m; sourceTree = "<group>"; };
-		C15FE91A242FB02800A851F1 /* PERDetailViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PERDetailViewModel.h; sourceTree = "<group>"; };
-		C15FE91B242FB02800A851F1 /* PERDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PERDetailViewController.h; sourceTree = "<group>"; };
-		C15FE91C242FB02800A851F1 /* PERDetailViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PERDetailViewModel.m; sourceTree = "<group>"; };
 		C15FE91E242FB02800A851F1 /* PERMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PERMineViewController.h; sourceTree = "<group>"; };
 		C15FE91F242FB02800A851F1 /* PERMineViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PERMineViewModel.m; sourceTree = "<group>"; };
 		C15FE920242FB02800A851F1 /* PERMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PERMineViewController.m; sourceTree = "<group>"; };
@@ -261,6 +251,10 @@
 		C15FEA0324320CF800A851F1 /* PERRecordViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PERRecordViewCell.m; sourceTree = "<group>"; };
 		C15FEA05243222C000A851F1 /* PERRecordModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PERRecordModel.h; sourceTree = "<group>"; };
 		C15FEA06243222C000A851F1 /* PERRecordModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PERRecordModel.m; sourceTree = "<group>"; };
+		C15FEA0824324ED800A851F1 /* UIBarButtonItem+Utility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Utility.h"; sourceTree = "<group>"; };
+		C15FEA0924324ED800A851F1 /* UIBarButtonItem+Utility.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Utility.m"; sourceTree = "<group>"; };
+		C15FEA0B243253F300A851F1 /* WKWebView+Utility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WKWebView+Utility.h"; sourceTree = "<group>"; };
+		C15FEA0C243253F300A851F1 /* WKWebView+Utility.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "WKWebView+Utility.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -289,6 +283,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C119FF9F2432609D002A6B50 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C119FFA0243260A9002A6B50 /* Model */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		C119FFA0243260A9002A6B50 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C119FFA12432610A002A6B50 /* PERUrlModel.h */,
+				C119FFA22432610A002A6B50 /* PERUrlModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C119FFA42432D9D8002A6B50 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C119FFA52432D9DF002A6B50 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		C15FE8B7242FAF6800A851F1 = {
 			isa = PBXGroup;
 			children = (
@@ -362,8 +387,6 @@
 			isa = PBXGroup;
 			children = (
 				C15FE938242FB02800A851F1 /* CustomTable */,
-				C15FE8FB242FB02800A851F1 /* Demo */,
-				C15FE918242FB02800A851F1 /* Detail */,
 				C15FE906242FB02800A851F1 /* Home */,
 				C15FE945242FB02800A851F1 /* Login */,
 				C15FE91D242FB02800A851F1 /* Mine */,
@@ -371,37 +394,6 @@
 				C15FE913242FB02800A851F1 /* Yoga */,
 			);
 			path = Business;
-			sourceTree = "<group>";
-		};
-		C15FE8FB242FB02800A851F1 /* Demo */ = {
-			isa = PBXGroup;
-			children = (
-				C15FE8FE242FB02800A851F1 /* Model */,
-				C15FE901242FB02800A851F1 /* View */,
-				C15FE8FD242FB02800A851F1 /* PERDemoViewController.h */,
-				C15FE905242FB02800A851F1 /* PERDemoViewController.m */,
-				C15FE904242FB02800A851F1 /* PERDemoViewModel.h */,
-				C15FE8FC242FB02800A851F1 /* PERDemoViewModel.m */,
-			);
-			path = Demo;
-			sourceTree = "<group>";
-		};
-		C15FE8FE242FB02800A851F1 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				C15FE900242FB02800A851F1 /* PERDemoModel.h */,
-				C15FE8FF242FB02800A851F1 /* PERDemoModel.m */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		C15FE901242FB02800A851F1 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				C15FE902242FB02800A851F1 /* PERDemoViewCell.h */,
-				C15FE903242FB02800A851F1 /* PERDemoViewCell.m */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		C15FE906242FB02800A851F1 /* Home */ = {
@@ -440,23 +432,14 @@
 		C15FE913242FB02800A851F1 /* Yoga */ = {
 			isa = PBXGroup;
 			children = (
+				C119FFA52432D9DF002A6B50 /* Model */,
+				C119FFA42432D9D8002A6B50 /* View */,
 				C15FE914242FB02800A851F1 /* PERYogaViewController.h */,
 				C15FE916242FB02800A851F1 /* PERYogaViewController.m */,
 				C15FE917242FB02800A851F1 /* PERYogaViewModel.h */,
 				C15FE915242FB02800A851F1 /* PERYogaViewModel.m */,
 			);
 			path = Yoga;
-			sourceTree = "<group>";
-		};
-		C15FE918242FB02800A851F1 /* Detail */ = {
-			isa = PBXGroup;
-			children = (
-				C15FE91B242FB02800A851F1 /* PERDetailViewController.h */,
-				C15FE919242FB02800A851F1 /* PERDetailViewController.m */,
-				C15FE91A242FB02800A851F1 /* PERDetailViewModel.h */,
-				C15FE91C242FB02800A851F1 /* PERDetailViewModel.m */,
-			);
-			path = Detail;
 			sourceTree = "<group>";
 		};
 		C15FE91D242FB02800A851F1 /* Mine */ = {
@@ -574,6 +557,7 @@
 		C15FE94A242FB02800A851F1 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				C119FF9F2432609D002A6B50 /* Common */,
 				C15FE9C324308C9A00A851F1 /* Module */,
 				C15FE969242FB02800A851F1 /* Mock */,
 				C15FE96C242FB02800A851F1 /* Request */,
@@ -617,6 +601,12 @@
 				C15FE957242FB02800A851F1 /* UIView+Utility.m */,
 				C15FE9D42430C63300A851F1 /* UIViewController+Utility.h */,
 				C15FE9D52430C63400A851F1 /* UIViewController+Utility.m */,
+				C15FEA0824324ED800A851F1 /* UIBarButtonItem+Utility.h */,
+				C15FEA0924324ED800A851F1 /* UIBarButtonItem+Utility.m */,
+				C15FEA0B243253F300A851F1 /* WKWebView+Utility.h */,
+				C15FEA0C243253F300A851F1 /* WKWebView+Utility.m */,
+				C119FF9C24325C7B002A6B50 /* UIAlertController+Utility.h */,
+				C119FF9D24325C7B002A6B50 /* UIAlertController+Utility.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -960,10 +950,8 @@
 				C15FE9A0242FB02900A851F1 /* PERTextureMutilImageNode.m in Sources */,
 				C15FE99A242FB02900A851F1 /* PERMineViewController.m in Sources */,
 				C15FE9BC242FB02900A851F1 /* PERListViewModel.m in Sources */,
-				C15FE98D242FB02900A851F1 /* PERDemoModel.m in Sources */,
 				C15FE9E12430F09900A851F1 /* PERTypewriterTextView.m in Sources */,
 				C15FE995242FB02900A851F1 /* PERYogaViewModel.m in Sources */,
-				C15FE98C242FB02900A851F1 /* PERDemoViewModel.m in Sources */,
 				C15FE990242FB02900A851F1 /* PERHomeViewController.m in Sources */,
 				C15FE9A7242FB02900A851F1 /* PERCustomBannerCell.m in Sources */,
 				C15FE99C242FB02900A851F1 /* PERTextureViewModel.m in Sources */,
@@ -978,7 +966,7 @@
 				C15FE9D224308DDA00A851F1 /* PERCarouselPageView.m in Sources */,
 				C15FE9FE24320C6A00A851F1 /* PERRecordView.m in Sources */,
 				C15FE9A2242FB02900A851F1 /* PERTextureMutilImageCellNode.m in Sources */,
-				C15FE98E242FB02900A851F1 /* PERDemoViewCell.m in Sources */,
+				C15FEA0A24324ED800A851F1 /* UIBarButtonItem+Utility.m in Sources */,
 				C15FE9B5242FB02900A851F1 /* PERNetwork+Mock.m in Sources */,
 				C15FE9B9242FB02900A851F1 /* PERNetwork+Home.m in Sources */,
 				C15FE9B3242FB02900A851F1 /* PERLogManager.m in Sources */,
@@ -988,6 +976,7 @@
 				C15FE994242FB02900A851F1 /* PERHomeViewListCell.m in Sources */,
 				C15FE99F242FB02900A851F1 /* PERTextureCommentNode.m in Sources */,
 				C15FE9B8242FB02900A851F1 /* PERNetwork+User.m in Sources */,
+				C119FF9E24325C7B002A6B50 /* UIAlertController+Utility.m in Sources */,
 				C15FE9BF242FB02900A851F1 /* PERListViewController.m in Sources */,
 				C15FE9BB242FB02900A851F1 /* PERServices.m in Sources */,
 				C15FE99D242FB02900A851F1 /* PERTextureModel.m in Sources */,
@@ -998,22 +987,21 @@
 				C15FE9A6242FB02900A851F1 /* PERCustomListCell.m in Sources */,
 				C15FEA0424320CF800A851F1 /* PERRecordViewCell.m in Sources */,
 				C15FE9AF242FB02900A851F1 /* UIView+Utility.m in Sources */,
-				C15FE998242FB02900A851F1 /* PERDetailViewModel.m in Sources */,
 				C15FE9B6242FB02900A851F1 /* PERNetwork+Texture.m in Sources */,
 				C15FE9BA242FB02900A851F1 /* PERViewModel.m in Sources */,
 				C15FE9B7242FB02900A851F1 /* PERNetwork+CustomTable.m in Sources */,
 				C15FE8C5242FAF6800A851F1 /* AppDelegate.m in Sources */,
 				C15FE9D62430C63400A851F1 /* UIViewController+Utility.m in Sources */,
+				C119FFA32432610A002A6B50 /* PERUrlModel.m in Sources */,
 				C15FE9BE242FB02900A851F1 /* PERNavigater.m in Sources */,
 				C15FE9A9242FB02900A851F1 /* PERLoginViewModel.m in Sources */,
-				C15FE98F242FB02900A851F1 /* PERDemoViewController.m in Sources */,
 				C15FE8D6242FAF6B00A851F1 /* main.m in Sources */,
 				C15FE9A8242FB02900A851F1 /* PERCustomTableViewController.m in Sources */,
 				C15FE99E242FB02900A851F1 /* PERTextureReplyCellNode.m in Sources */,
 				C15FE9BD242FB02900A851F1 /* PERNavigater+ViewController.m in Sources */,
 				C15FE9B0242FB02900A851F1 /* PERNetworkTool.m in Sources */,
 				C15FE9B2242FB02900A851F1 /* PERNetwork.m in Sources */,
-				C15FE997242FB02900A851F1 /* PERDetailViewController.m in Sources */,
+				C15FEA0D243253F300A851F1 /* WKWebView+Utility.m in Sources */,
 				C15FE99B242FB02900A851F1 /* PERUserModel.m in Sources */,
 				C15FE999242FB02900A851F1 /* PERMineViewModel.m in Sources */,
 				C15FE993242FB02900A851F1 /* PERHomeViewBannerCell.m in Sources */,

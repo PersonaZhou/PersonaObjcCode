@@ -18,6 +18,8 @@ NS_ASSUME_NONNULL_BEGIN
 // 保存表格数据的数组
 @property (nonatomic, copy, readonly) NSArray *listArray;
 
+@property (nonatomic, copy) NSString *documentUrl;
+
 @end
 
 NS_ASSUME_NONNULL_END

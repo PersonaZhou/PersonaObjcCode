@@ -18,12 +18,6 @@
 #import "PERLoginViewModel.h"
 #import "PERLoginViewController.h"
 
-#import "PERDetailViewModel.h"
-#import "PERDetailViewController.h"
-
-#import "PERDemoViewController.h"
-#import "PERDemoViewModel.h"
-
 #import "PERYogaViewController.h"
 #import "PERYogaViewModel.h"
 

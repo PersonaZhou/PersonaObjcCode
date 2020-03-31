@@ -22,6 +22,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)bindEvent;
 
+- (void)buildNavigaterRightBtnItem;
+
 @end
 
 NS_ASSUME_NONNULL_END

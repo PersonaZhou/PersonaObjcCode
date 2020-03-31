@@ -26,13 +26,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+}
 
-    UISearchBar * searchbar = [[UISearchBar alloc] initWithFrame:CGRectMake(0, 0, UIScreen.mainScreen.bounds.size.width - 80, 44)];
-    searchbar.delegate = self;
-    [searchbar setTintColor:[UIColor grayColor]];
-    [searchbar setPlaceholder:@"冰糖炖雪梨"];
-    UIBarButtonItem *searchButton = [[UIBarButtonItem alloc] initWithCustomView:searchbar];
-    self.navigationItem.rightBarButtonItem = searchButton;
+- (void)buildNavigaterRightBtnItem {
+    UISearchBar *searchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(0, 0, UIScreen.mainScreen.bounds.size.width -130, 44)];
+    searchBar.delegate = self;
+    [searchBar setTintColor:[UIColor grayColor]];
+    [searchBar setPlaceholder:@"冰糖炖雪梨"];
+    UIBarButtonItem *searchBarItem = [[UIBarButtonItem alloc] initWithCustomView:searchBar];
+    
+    UIBarButtonItem *documentItem = [UIBarButtonItem documentButtonItemWithUrl:self.viewModel.documentUrl];
+    
+    self.navigationItem.rightBarButtonItems = @[documentItem, searchBarItem];
 }
 
 #pragma mark - UISearchBarDelegate

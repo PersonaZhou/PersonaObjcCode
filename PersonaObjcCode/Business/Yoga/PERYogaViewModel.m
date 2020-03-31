@@ -10,4 +10,8 @@
 
 @implementation PERYogaViewModel
 
+- (NSString *)documentUrl {
+    return nil;
+}
+
 @end

@@ -138,4 +138,8 @@
     return result;
 }
 
+- (NSString *)documentUrl {
+    return nil;
+}
+
 @end

@@ -27,6 +27,11 @@
     [self setupNode];
 }
 
+- (void)buildNavigaterRightBtnItem {
+    UIBarButtonItem *documentItem = [UIBarButtonItem documentButtonItemWithUrl:self.viewModel.documentUrl];
+    self.navigationItem.rightBarButtonItems = @[documentItem];
+}
+
 - (void)setupNode {
     [self.view addSubnode:self.tableNode];
 }

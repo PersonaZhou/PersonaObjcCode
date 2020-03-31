@@ -85,6 +85,11 @@
 - (BOOL)openURL:(nullable NSString *)url {
     if (!url || url.length == 0) return NO;
     
+    if ([url hasPrefix:@"https://"] || [url hasPrefix:@"http://"]) {
+        [WKWebView openUrl:url];
+        return NO;
+    }
+    
     NSString *protocol = @"persona://code";
     if (![url hasPrefix:protocol]) return NO;
     

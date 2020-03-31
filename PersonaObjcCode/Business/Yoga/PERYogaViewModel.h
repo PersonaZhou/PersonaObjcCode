@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface PERYogaViewModel : PERViewModel
 
+@property (nonatomic, copy) NSString *documentUrl;
+
 @end
 
 NS_ASSUME_NONNULL_END

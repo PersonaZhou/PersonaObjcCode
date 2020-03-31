@@ -50,8 +50,6 @@
             NSStringFromClass(PERHomeViewModel.class): PERHomeViewController.class,
             NSStringFromClass(PERMineViewModel.class): PERMineViewController.class,
             NSStringFromClass(PERLoginViewModel.class): PERLoginViewController.class,
-            NSStringFromClass(PERDetailViewModel.class): PERDetailViewController.class,
-            NSStringFromClass(PERDemoViewModel.class): PERDemoViewController.class,
             NSStringFromClass(PERYogaViewModel.class): PERYogaViewController.class,
             NSStringFromClass(PERTextureViewModel.class): PERTextureViewController.class,
             NSStringFromClass(PERCustomTableViewModel.class): PERCustomTableViewController.class,
@@ -72,8 +70,6 @@ static NSString *PERViewControllersKey = @"PERViewControllersKey";
     NSDictionary *ms = objc_getAssociatedObject(self, _cmd);
     if (!ms) {
         ms = @{
-            @"/detail": PERDetailViewModel.class,
-            @"/demo": PERDemoViewModel.class,
             @"/yoga": PERYogaViewModel.class,
             @"/texture": PERTextureViewModel.class,
             @"/custom_table": PERCustomTableViewModel.class,

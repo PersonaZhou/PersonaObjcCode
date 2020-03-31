@@ -132,9 +132,25 @@
         };
         
         
+        NSDictionary *rac_url_1 = @{@"title": @"ReactiveCocoa 基础",
+                                    @"url": @"https://zhoushisong.cn/2019/11/15/ReactiveCocoa%20%E5%9F%BA%E7%A1%80/"};
+        NSDictionary *rac_url_2 = @{@"title": @"ReactiveCocoa 进阶",
+                                    @"url": @"https://zhoushisong.cn/2019/11/21/ReactiveCocoa%20%E8%BF%9B%E9%98%B6/"};
+        NSDictionary *rac_url_3 = @{@"title": @"ReactiveCocoa 使用中注意项",
+                                    @"url": @"https://zhoushisong.cn/2019/11/23/ReactiveCocoa%20%E4%BD%BF%E7%94%A8%E4%B8%AD%E6%B3%A8%E6%84%8F%E9%A1%B9/"};
+        NSArray *rac_urls = @[rac_url_1, rac_url_2, rac_url_3];
+        
+        NSDictionary *rac = @{
+            @"imgName": @"icon_rac",
+            @"title": @"ReactiveCocoa",
+            @"introduction": @"ReactiveCocoa是GitHub上一个开源的函数响应式（Functional Reactive Programming）框架，提供Objective-C和Swift，为绑定ViewModel和响应式编程提供了便利。",
+            @"urls": rac_urls,
+        };
+        
         [subscriber sendNext:texture];
         [subscriber sendNext:yoga];
         [subscriber sendNext:customTable];
+        [subscriber sendNext:rac];
         
         [subscriber sendCompleted];
         return nil;

@@ -7,9 +7,13 @@
 //
 
 #import "PERYogaViewController.h"
+#import "PERYogaViewModel.h"
+
 #import <YogaKit/YGLayout.h>
 
 @interface PERYogaViewController ()
+
+@property (nonatomic, strong) PERYogaViewModel *viewModel;
 
 @property (nonatomic, strong) UIView *headerView;
 @property (nonatomic, strong) UIImageView *avatarImageView;
@@ -21,6 +25,7 @@
 @end
 
 @implementation PERYogaViewController
+@dynamic viewModel;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -28,6 +33,11 @@
     [self setupView];
     [self makeFlexBox];
     [self bindEvent];
+}
+
+- (void)buildNavigaterRightBtnItem {
+    UIBarButtonItem *documentItem = [UIBarButtonItem documentButtonItemWithUrl:self.viewModel.documentUrl];
+    self.navigationItem.rightBarButtonItems = @[documentItem];
 }
 
 - (void)setupView {
