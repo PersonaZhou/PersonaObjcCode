@@ -67,3 +67,23 @@ align=center>
 * Swift混编和PersonaSwiftCode演示项目
 *  接入Infer
 * ......
+
+### 备注
+
+##### GitHub页面无法正常加载图片
+
+**解决办法：**
+
+###### 方法一：
+开启代理，如果还不行切换到全局模式；
+
+###### 方法二： (该方法不推荐，可能会导致开启代理无法正常访问谷歌)
+通过[IPAddress](https://www.ipaddress.com/)首页，输入`raw.githubusercontent.com`查询到真实IP地址
+
+```objc
+sudo vi /etc/hosts
+```
+
+```objc
+199.232.68.133 raw.githubusercontent.com
+```
