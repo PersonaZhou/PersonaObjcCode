@@ -7,7 +7,7 @@
 
 ### 二、目录结构
 
-![](https://note.youdao.com/yws/api/personal/file/WEBacd53461c965e1c5b7db4ab21aac7833?method=download&shareKey=4601cbce898810df3b6c62c4f145866b)
+![add image](https://github.com/ZhouShisong/PersonaObjcCode/raw/master/DemonstrationImage/demonstration_structure.png)
 
 * Business - 业务模块目录
 * Core - 封装的一些底层接口，包括：MVVM架构（ViewController和ViewModel绑定），导航控制（原生跳转和统跳），网络请求和mock数据，其他一些工具类。
