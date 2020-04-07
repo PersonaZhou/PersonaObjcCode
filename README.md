@@ -27,27 +27,34 @@
 
 ##### 登录界面
 
-![add image](https://github.com/ZhouShisong/PersonaObjcCode/raw/master/DemonstrationImage/demonstration_1.png)
+<img src="https://github.com/ZhouShisong/PersonaObjcCode/raw/master/DemonstrationImage/demonstration_1.png" width = "414" height = "896" alt="demonstration_1" 
+align=center>
+
 
 ##### 首页界面
 
-![add image](https://github.com/ZhouShisong/PersonaObjcCode/raw/master/DemonstrationImage/demonstration_2.png)
+<img src="https://github.com/ZhouShisong/PersonaObjcCode/raw/master/DemonstrationImage/demonstration_2.png" width = "414" height = "896" alt="demonstration_2" 
+align=center>
 
 ##### 我的界面
 
-![add image](https://github.com/ZhouShisong/PersonaObjcCode/raw/master/DemonstrationImage/demonstration_3.png)
+<img src="https://github.com/ZhouShisong/PersonaObjcCode/raw/master/DemonstrationImage/demonstration_3.png" width = "414" height = "896" alt="demonstration_3" 
+align=center>
 
 ##### Texture界面
 
-![add image](https://github.com/ZhouShisong/PersonaObjcCode/raw/master/DemonstrationImage/demonstration_4.png)
+<img src="https://github.com/ZhouShisong/PersonaObjcCode/raw/master/DemonstrationImage/demonstration_4.png" width = "414" height = "896" alt="demonstration_4" 
+align=center>
 
 ##### 自定义TableViewController界面
 
-![add image](https://github.com/ZhouShisong/PersonaObjcCode/raw/master/DemonstrationImage/demonstration_5.png)
+<img src="https://github.com/ZhouShisong/PersonaObjcCode/raw/master/DemonstrationImage/demonstration_5.png" width = "414" height = "896" alt="demonstration_5" 
+align=center>
 
 ##### ReactiveCocoa文档界面
 
-![add image](https://github.com/ZhouShisong/PersonaObjcCode/raw/master/DemonstrationImage/demonstration_6.png)
+<img src="https://github.com/ZhouShisong/PersonaObjcCode/raw/master/DemonstrationImage/demonstration_6.png" width = "414" height = "896" alt="demonstration_6" 
+align=center>
 
 
 ### 五、后续计划
