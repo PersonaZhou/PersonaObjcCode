@@ -18,11 +18,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface PERHomeListItem : NSObject
 
-@property (nonatomic, copy) NSString *imgName;
-@property (nonatomic, copy) NSString *title;
-@property (nonatomic, copy) NSString *introduction;
-@property (nonatomic, copy) NSString *url;
-@property (nonatomic, copy) NSArray<PERUrlModel *> *urls;
+@property (nonatomic, copy) NSString *imgName; // 首页cell的图片
+@property (nonatomic, copy) NSString *title; // 首页cell的标题
+@property (nonatomic, copy) NSString *introduction; // 首页cell内容简介
+@property (nonatomic, copy) NSString *url; // 首页cell的统跳URL，如果只有一个统跳
+@property (nonatomic, copy) NSArray<PERUrlModel *> *urls; // 如果有多个统跳URL
 
 @end
 

@@ -24,17 +24,22 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [NSThread sleepForTimeInterval:1];
     
+    // 初始化日志
     [self setupLog];
+    // 初始化哆啦A梦组件
     [self setupDoraemon];
     
+    // 读取user和token缓存
     PERUserModel *user = [[PERPersistentDataManager sharedManager] user];
     NSString *token = [[PERPersistentDataManager sharedManager] token];
     
+    // 配置全局services、navigater和network
     self.services = [PERServices authenticatedClientWithUser:user token:token];
     self.navigater = [[PERNavigater alloc] initWithServices:self.services];
     self.services.network = [PERNetwork authenticatedClientWithUser:user token:token];
     self.services.navigater = self.navigater;
     
+    // 初始化rootViewController
     UIViewController *rootViewController = self.navigater.loginViewController;
     if (self.services.isAuthenticated) {
         [self.navigater resetRootViewModel];
@@ -45,6 +50,7 @@
     self.window.rootViewController = rootViewController;
     [self.window makeKeyAndVisible];
     
+    // 监听登录和注销
     @weakify(self);
     [self.services.signInSignal subscribeNext:^(id  _Nullable x) {
         @strongify(self);

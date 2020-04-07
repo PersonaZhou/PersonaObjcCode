@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface PERRecordModel : NSObject
 
-@property (nonatomic, copy) NSString *title;
+@property (nonatomic, copy) NSString *title; // 这里记录搜索记录的title
 
 @end
 

@@ -14,13 +14,13 @@
 - (RACSignal *)fetchVerificationCodeWithPhone:(NSString *)phone {
     NSDictionary *parameters = @{@"phone": phone};
     
-    return [[self requestPostWithPath:@"/login/send_sms_code" contentType:PERRequestContentTypeJson parameters:parameters] delay:3.0];
+    return [self requestPostWithPath:@"/login/send_sms_code" contentType:PERRequestContentTypeJson parameters:parameters];
 }
 
 - (RACSignal *)loginWithPhone:(NSString *)phone code:(NSString *)code {
-    NSDictionary *parameters = @{@"phone": phone};
+    NSDictionary *parameters = @{@"phone": phone, @"code": code};
     
-    return [[[self requestPostWithPath:@"/login/sigin_by_sms_code" contentType:PERRequestContentTypeJson parameters:parameters] parseClass:PERUserModel.class] delay:2.0];
+    return [[self requestPostWithPath:@"/login/sigin_by_sms_code" contentType:PERRequestContentTypeJson parameters:parameters] parseClass:PERUserModel.class];
 }
 
 @end

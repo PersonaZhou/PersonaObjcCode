@@ -12,11 +12,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface PERLoginViewModel : PERViewModel
 
-@property (nonatomic, copy) NSString *phone;
-@property (nonatomic, copy) NSString *code;
+@property (nonatomic, copy) NSString *phone; // 手机号
+@property (nonatomic, copy) NSString *code; // 验证码
 
-@property (nonatomic, strong, readonly) RACCommand *fetchCodeCommand;
-@property (nonatomic, strong, readonly) RACCommand *loginCommand;
+@property (nonatomic, strong, readonly) RACCommand *fetchCodeCommand; // 获取验证码接口
+@property (nonatomic, strong, readonly) RACCommand *loginCommand; // 登录接口
 
 @end
 

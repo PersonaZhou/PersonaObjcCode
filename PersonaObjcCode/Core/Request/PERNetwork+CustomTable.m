@@ -13,13 +13,13 @@
 @implementation PERNetwork (CustomTable)
 
 - (RACSignal *)fetchCustomTableBanner {
-    return [[[self requestPostWithPath:@"/customtable/record" contentType:PERRequestContentTypeJson parameters:nil] parseClass:PERCustomTableBannerModel.class] delay:0.5f];
+    return [[self requestPostWithPath:@"/customtable/record" contentType:PERRequestContentTypeJson parameters:nil] parseClass:PERCustomTableBannerModel.class];
 }
 
 - (RACSignal *)fetchCustomTableListWithPage:(NSUInteger)page pageSize:(NSUInteger)pageSize {
     NSDictionary *parameters = @{@"page": @(page), @"pageSize": @(pageSize)};
     
-    return [[[self requestPostWithPath:@"/customtable/list" contentType:PERRequestContentTypeJson parameters:parameters] parseClass:PERCustomTableListItemModel.class] delay:1.0];
+    return [[self requestPostWithPath:@"/customtable/list" contentType:PERRequestContentTypeJson parameters:parameters] parseClass:PERCustomTableListItemModel.class];
 }
 
 @end

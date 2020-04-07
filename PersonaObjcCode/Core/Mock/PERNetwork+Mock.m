@@ -21,19 +21,19 @@
     PERLogD(@"%@ \n path:%@ \n parameters:%@", @"------------ Request ------------ ", path, parameters);
     
     if ([path isEqualToString:@"/login/send_sms_code"]) {
-        s = [self fetchSMSCodeWithParameters:parameters];
+        s = [[self fetchSMSCodeWithParameters:parameters] delay:0.5];
     }else if ([path isEqualToString:@"/login/sigin_by_sms_code"]) {
-        s = [self loginBySMSCodeWithParameters:parameters];
+        s = [[self loginBySMSCodeWithParameters:parameters] delay:0.5];
     }else if ([path isEqualToString:@"/home/banner"]) {
-        s = [self fetchHomeBanner:parameters];
+        s = [[self fetchHomeBanner:parameters] delay:0.25];
     }else if ([path isEqualToString:@"/home/list"]) {
-        s = [self fetchHomeList:parameters];
+        s = [[self fetchHomeList:parameters] delay:0.2];
     }else if ([path isEqualToString:@"/texture/list"]) {
-        s = [self fetchTextureList:parameters];
+        s = [[self fetchTextureList:parameters] delay:0.3];
     }else if ([path isEqualToString:@"/customtable/record"]) {
-        s = [self fetchCustomTableBanner:parameters];
+        s = [[self fetchCustomTableBanner:parameters] delay:0.5];
     }else if ([path isEqualToString:@"/customtable/list"]) {
-        s = [self fetchCustomTableList:parameters];
+        s = [[self fetchCustomTableList:parameters] delay:0.25];
     }
     
     return [s doNext:^(id  _Nullable x) {

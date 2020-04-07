@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@protocol HorizontalCollectionLayoutDelegate <NSObject>
+@protocol PERRecordCollectionLayoutDelegate <NSObject>
 
 @optional
 // 用协议传回 item 的内容,用于计算 item 宽度
@@ -33,7 +33,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) UIEdgeInsets footerInset;
 @property (nonatomic, strong) UIFont *labelFont;
 
-@property (nonatomic, weak) id<HorizontalCollectionLayoutDelegate> delegate;
+@property (nonatomic, weak) id<PERRecordCollectionLayoutDelegate> delegate;
 
 @end
 

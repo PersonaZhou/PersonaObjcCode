@@ -55,7 +55,7 @@
     }
     
     if (replys.count > 0) {
-        self.replys = replys; //由于Texture是响应式框架，这里不用再调用reload，会自动触发刷新
+        self.replys = replys; // 由于Texture是响应式框架，这里不用再调用reload，会自动触发刷新
     }
 }
 
@@ -95,7 +95,8 @@
                                       insetLayoutSpecWithInsets:UIEdgeInsetsMake(15, 5, 5, 0)
                                       child:contentSpec];
     
-    ASBackgroundLayoutSpec *spec = [ASBackgroundLayoutSpec backgroundLayoutSpecWithChild:insetLayout background:self.bgImageNode];
+    ASBackgroundLayoutSpec *spec = [ASBackgroundLayoutSpec backgroundLayoutSpecWithChild:insetLayout
+                                                                              background:self.bgImageNode];
     
     return spec;
 }

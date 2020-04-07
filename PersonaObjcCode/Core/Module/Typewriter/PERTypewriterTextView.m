@@ -20,7 +20,7 @@
     if (self = [super init]) {
         self.interval = 0.3;
         
-         [self addObserver:self forKeyPath:@"contentSize" options: (NSKeyValueObservingOptionNew) context:NULL];
+         [self addObserver:self forKeyPath:@"contentSize" options:(NSKeyValueObservingOptionNew) context:NULL];
     }
     return self;
 }
@@ -40,9 +40,14 @@
         self.timer = nil;
         self.startIndex = 0;
     }
-    self.timer = [NSTimer scheduledTimerWithTimeInterval:self.interval target:self selector:@selector(inputWord:) userInfo:nil repeats:YES];
-    [[NSRunLoop currentRunLoop] addTimer:self.timer forMode:NSRunLoopCommonModes];
     
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:self.interval
+                                                  target:self
+                                                selector:@selector(inputWord:)
+                                                userInfo:nil
+                                                 repeats:YES];
+    
+    [[NSRunLoop currentRunLoop] addTimer:self.timer forMode:NSRunLoopCommonModes];
 }
 
 - (void)inputWord:(NSTimer *)timer {

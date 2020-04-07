@@ -10,7 +10,7 @@
 #import "PERRecordViewCell.h"
 #import "PERRecordViewLayout.h"
 
-@interface PERRecordView ()<UICollectionViewDelegate, UICollectionViewDataSource, HorizontalCollectionLayoutDelegate>
+@interface PERRecordView ()<UICollectionViewDelegate, UICollectionViewDataSource, PERRecordCollectionLayoutDelegate>
 
 @property (nonatomic, strong) UICollectionView *collectionView;
 

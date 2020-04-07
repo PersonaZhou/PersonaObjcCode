@@ -147,7 +147,7 @@
     [self.attributesArray addObject:attributes];
 }
 
-#pragma mark - New Header Or Footer
+#pragma mark - Header & Footer
 - (void)makeHeaderAttributesWithIndexPath:(NSIndexPath *)indexPath lastItemAttributes:(UICollectionViewLayoutAttributes *)attributes {
     //设置第一个section的header
     UICollectionViewLayoutAttributes *headerAttributes = [UICollectionViewLayoutAttributes layoutAttributesForSupplementaryViewOfKind:UICollectionElementKindSectionHeader withIndexPath:indexPath];
@@ -198,7 +198,7 @@
     
 }
 
-#pragma mark -
+#pragma mark - layout
 //这个是返回所有 header, footer, item 属性的回调方法, 一定要实现
 - (NSArray<UICollectionViewLayoutAttributes *> *)layoutAttributesForElementsInRect:(CGRect)rect {
     return self.attributesArray;

@@ -28,8 +28,7 @@ static const float spacing = 11;
     
 }
 
-- (void)prepareLayout
-{
+- (void)prepareLayout {
     [super prepareLayout];
     
     CGFloat width = self.collectionViewBounds.width - (visibleItemsCount - 1)*spacing;

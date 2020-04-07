@@ -12,8 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface PERYogaOptionModel : NSObject
 
-@property (nonatomic, copy) NSString *icon;
-@property (nonatomic, copy) NSString *title;
+@property (nonatomic, copy) NSString *icon; // 图标
+@property (nonatomic, copy) NSString *title; // 标题
 
 @end
 

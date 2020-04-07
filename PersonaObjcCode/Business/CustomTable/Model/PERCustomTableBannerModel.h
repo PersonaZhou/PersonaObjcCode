@@ -12,16 +12,18 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface PERCustomTableBannerModel : NSObject
 
-@property (nonatomic, copy) NSString *title;
+//TODO 这个model有点重复，这里待重构
+
+@property (nonatomic, copy) NSString *title; // 这里记录搜索记录的title
 
 @end
 
 
 @interface PERCustomTableListItemModel : NSObject
 
-@property (nonatomic, copy) NSString *thumbnail;
-@property (nonatomic, copy) NSString *title;
-@property (nonatomic, copy) NSString *introduction;
+@property (nonatomic, copy) NSString *thumbnail; // 小说封面
+@property (nonatomic, copy) NSString *title; // 小说名称
+@property (nonatomic, copy) NSString *introduction; // 小说简介
 
 @end
 

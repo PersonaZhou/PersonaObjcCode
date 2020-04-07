@@ -12,10 +12,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface PERYogaInfoModel : NSObject
 
-@property (nonatomic, copy) NSString *avatar;
-@property (nonatomic, copy) NSString *nickname;
-@property (nonatomic, copy) NSString *address;
-@property (nonatomic, copy) NSString *email;
+@property (nonatomic, copy) NSString *avatar; // 头像
+@property (nonatomic, copy) NSString *nickname; // 昵称
+@property (nonatomic, copy) NSString *address; // 地址
+@property (nonatomic, copy) NSString *email; // 邮箱
 
 @end
 

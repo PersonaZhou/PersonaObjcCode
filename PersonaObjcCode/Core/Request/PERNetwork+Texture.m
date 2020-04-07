@@ -15,7 +15,7 @@
 - (RACSignal *)fetchListWithPage:(NSUInteger)page pageSize:(NSUInteger)pageSize {
     NSDictionary *parameters = @{@"page": @(page), @"pageSize": @(pageSize)};
     
-    return [[[self requestPostWithPath:@"/texture/list" contentType:PERRequestContentTypeJson parameters:parameters] parseClass:PERTextureModel.class] delay:1.0];
+    return [[self requestPostWithPath:@"/texture/list" contentType:PERRequestContentTypeJson parameters:parameters] parseClass:PERTextureModel.class];
 }
 
 @end

@@ -13,13 +13,13 @@
 @implementation PERNetwork (Home)
 
 - (RACSignal *)fetchHomeBanner {
-    return [[[self requestPostWithPath:@"/home/banner" contentType:PERRequestContentTypeJson parameters:nil] parseClass:PERHomeListItem.class] delay:0.25];
+    return [[self requestPostWithPath:@"/home/banner" contentType:PERRequestContentTypeJson parameters:nil] parseClass:PERHomeListItem.class];
 }
 
 - (RACSignal *)fetchHomeListWithPage:(NSUInteger)page pageSize:(NSUInteger)pageSize {
     NSDictionary *parameters = @{@"page": @(page), @"pageSize": @(pageSize)};
     
-    return [[[self requestPostWithPath:@"/home/list" contentType:PERRequestContentTypeJson parameters:parameters] parseClass:PERHomeListItem.class] delay:0.5];
+    return [[self requestPostWithPath:@"/home/list" contentType:PERRequestContentTypeJson parameters:parameters] parseClass:PERHomeListItem.class];
 }
 
 @end

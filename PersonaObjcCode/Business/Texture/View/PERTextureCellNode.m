@@ -80,7 +80,10 @@
     contentSpec.spacing = 10;
     contentSpec.alignItems = ASStackLayoutAlignItemsStretch;
     contentSpec.style.maxWidth = contentMaxWidth;
-    [contentSpec setChildren:@[self.nicknameNode, self.reportNode, self.mutilImageNode, self.locationNode, dateDelReplySpec]];
+    [contentSpec setChildren:@[self.nicknameNode,
+                               self.reportNode,
+                               self.mutilImageNode,
+                               self.locationNode, dateDelReplySpec]];
     
     ASStackLayoutSpec *avatarContentSpec = [ASStackLayoutSpec horizontalStackLayoutSpec];
     avatarContentSpec.spacing = 10;

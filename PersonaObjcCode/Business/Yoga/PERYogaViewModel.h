@@ -12,9 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface PERYogaViewModel : PERViewModel
 
-@property (nonatomic, copy) NSString *documentUrl;
+@property (nonatomic, copy) NSString *documentUrl; // 文档URL
 
-@property (nonatomic, copy, readonly) NSArray *dataSource;
+@property (nonatomic, copy, readonly) NSArray *dataSource; // tableView的dataSource
 
 @end
 

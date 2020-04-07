@@ -12,6 +12,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface RACSignal (JSONParser)
 
+/**
+*  转换model
+*
+*  @param cls    指定转换的class
+*/
 - (RACSignal *)parseClass:(Class)cls;
 
 @end

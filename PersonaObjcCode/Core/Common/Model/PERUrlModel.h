@@ -12,8 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface PERUrlModel : NSObject
 
-@property (nonatomic, copy) NSString *title;
-@property (nonatomic, copy) NSString *url;
+@property (nonatomic, copy) NSString *title; // 标题
+@property (nonatomic, copy) NSString *url; // URL
 
 @end
 

@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface PERMineViewModel : PERViewModel
 
-@property (nonatomic, strong, readonly) RACCommand *logoutCommand;
+@property (nonatomic, strong, readonly) RACCommand *logoutCommand; // 退出登录
 
 @end
 

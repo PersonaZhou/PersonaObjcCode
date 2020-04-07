@@ -12,13 +12,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface PERTextureViewModel : PERViewModel
 
-// 加载数据
-@property (nonatomic, strong, readonly) RACCommand *loadCommand;
+@property (nonatomic, strong, readonly) RACCommand *loadCommand; // 加载数据接口
 
-// 保存表格数据的数组
-@property (nonatomic, copy, readonly) NSArray *listArray;
+@property (nonatomic, copy, readonly) NSArray *listArray; // 保存表格数据的数组
 
-@property (nonatomic, copy) NSString *documentUrl;
+@property (nonatomic, copy) NSString *documentUrl; // 文档URL
 
 @end
 

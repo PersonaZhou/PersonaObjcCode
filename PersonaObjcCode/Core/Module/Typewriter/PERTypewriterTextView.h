@@ -14,20 +14,15 @@ typedef void (^PERTypewriterInputFinishBlock)(void);
 
 @interface PERTypewriterTextView : UITextView
 
-/* 打字间隔时间，默认0.3秒*/
-@property (nonatomic) NSTimeInterval interval;
+@property (nonatomic) NSTimeInterval interval; //打字间隔时间，默认0.3秒
 
-/* 起始位置 */
-@property (nonatomic) NSUInteger startIndex;
+@property (nonatomic) NSUInteger startIndex; //起始位置
 
-/* 输入完成block */
-@property (nonatomic, copy) PERTypewriterInputFinishBlock inputFinishBlock;
+@property (nonatomic, copy) PERTypewriterInputFinishBlock inputFinishBlock; //输入完成block
 
-/* 显示文案 */
-@property (nonatomic, copy) NSString *content;
+@property (nonatomic, copy) NSString *content; //显示文案
 
-/* 开始输入 */
-- (void)startInput;
+- (void)startInput; //开始输入
 
 @end
 

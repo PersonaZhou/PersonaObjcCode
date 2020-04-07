@@ -43,11 +43,11 @@
 }
 
 - (void)bindEvent {
-    // 绑定数据
+    // 双向绑定数据（viewModel & View）
     RACChannelTo(self.usernameTextfield, text) = RACChannelTo(self.viewModel, phone);
     RACChannelTo(self.codeTextfield, text) = RACChannelTo(self.viewModel, code);
     
-    // 限制输入长度
+    // 限制手机号输入长度
     RACSignal<NSString *> *usernameSignal = self.usernameTextfield.rac_textSignal;
     RAC(self.usernameTextfield, text) = [usernameSignal map:^id _Nullable(NSString * _Nullable value) {
         return value.length > 11 ? [value substringToIndex:11] : value;
@@ -55,6 +55,7 @@
     
     self.usernameTextfield.text = @"18202888888";
     
+    // 限制验证码输入长度
     RACSignal<NSString *> *codeSignal = self.codeTextfield.rac_textSignal;
     RAC(self.codeTextfield, text) = [codeSignal map:^id _Nullable(NSString * _Nullable value) {
         return value.length > 6 ? [value substringToIndex:6] : value;
@@ -65,6 +66,7 @@
         return @([value validateMobile]);
     }];
     
+    // 绑定获取验证码btn的enabled
     RAC(self.fetchCodeBtn, enabled) = phoneNumberValidSignal;
     
     RACSignal<NSNumber *> *codeValidSignal = [codeSignal map:^id _Nullable(NSString * _Nullable value) {
@@ -75,6 +77,7 @@
         return @(phoneNumberValide.boolValue && codeValide.boolValue);
     }];
 
+    // 绑定登录btn的enabled
     RAC(self.loginBtn, enabled) = validSignal;
     
     // 接口请求
@@ -99,6 +102,7 @@
     [self bindFetchCodeCommand];
     [self bindLoginCommand];
     
+    // 打字机输入
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] init];
     tap.numberOfTapsRequired = 2;
     [self.typewriterTextView addGestureRecognizer:tap];
@@ -111,6 +115,7 @@
     [self.typewriterTextView startInput];
 }
 
+// 获取验证码接口
 - (void)bindFetchCodeCommand {
     @weakify(self);
     [[self.viewModel.fetchCodeCommand executing] subscribeNext:^(NSNumber * _Nullable x) {
@@ -136,6 +141,7 @@
     }];
 }
 
+// 登录接口
 - (void)bindLoginCommand {
     @weakify(self);
     [self.viewModel.loginCommand.executionSignals subscribeNext:^(RACSignal *loginSignal) {
