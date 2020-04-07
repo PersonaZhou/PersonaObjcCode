@@ -8,7 +8,7 @@
 ### 二、目录结构
 
 
-![add image](https://github.com/ZhouShisong/PersonaObjcCode/raw/master/DemonstrationImage/demonstration_structure.png)
+![add image](https://github.com/ZhouShisong/PersonaObjcCode/raw/master/DemonstrationImage/PersonaObjcCode.png)
 
 
 * Business - 业务模块目录
@@ -64,5 +64,6 @@ align=center>
 * 蓝牙和iBeacon
 * 动画
 * 绘图
-* Swift混编
+* Swift混编和PersonaSwiftCode演示项目
+*  接入Infer
 * ......
