@@ -52,7 +52,7 @@
                 if (vm.item.url && vm.item.url.length > 0) {
                     [self.services.navigater openURL:vm.item.url];
                 }else if (vm.item.urls && vm.item.urls.count > 0) {
-                    [UIAlertController showActionSheetWithTitle:nil message:nil url:vm.item.urls];
+                    [UIAlertController showActionSheetWithTitle:nil message:nil urls:vm.item.urls];
                 }
             }
             

@@ -45,10 +45,7 @@
 
 - (RACCommand *)selectCommand {
     if (!_selectCommand) {
-        @weakify(self);
         _selectCommand = [[RACCommand alloc] initWithSignalBlock:^RACSignal *(id viewModel) {
-            @strongify(self);
-            
             return [RACSignal empty];
         }];
     }

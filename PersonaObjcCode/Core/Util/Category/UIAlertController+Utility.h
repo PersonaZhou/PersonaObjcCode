@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UIAlertController (Utility)
 
-+ (void)showActionSheetWithTitle:(nullable NSString *)title message:(nullable NSString *)message url:(NSArray<PERUrlModel *> *)urls;
++ (void)showActionSheetWithTitle:(nullable NSString *)title message:(nullable NSString *)message urls:(NSArray<PERUrlModel *> *)urls;
 
 @end
 

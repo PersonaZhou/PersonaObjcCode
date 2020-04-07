@@ -10,7 +10,7 @@
 
 @implementation UIAlertController (Utility)
 
-+ (void)showActionSheetWithTitle:(NSString *)title message:(NSString *)message url:(NSArray<PERUrlModel *> *)urls {
++ (void)showActionSheetWithTitle:(NSString *)title message:(NSString *)message urls:(NSArray<PERUrlModel *> *)urls {
     if (!urls || urls.count == 0) return;
     
     UIAlertController *sheet = [UIAlertController alertControllerWithTitle:title
