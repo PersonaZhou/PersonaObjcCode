@@ -25,9 +25,9 @@
 * 自定义TableViewController，继承PERListViewController和PERListViewModel即可简易使用tableView
 * Texture（AsyncDisplayKit），Facebook组件，异步渲染组件演示
 * Yoga，Facebook组件，提供Flexbox布局演示
-* ReactiveCocoa，提供了函数响应式编程框架的使用演示
+* ReactiveCocoa，提供了函数响应式编程框架的使用演示，PERLoginViewController和PERLoginViewModel有较多演示代码
 * MVVM，提供了如何将对ViewModel和ViewController进行数据绑定的演示
-* DoraemonKit，集成调试攻击的演示
+* DoraemonKit，集成调试功能的演示
 
 ### 四、演示界面
 
@@ -72,7 +72,7 @@ align=center>
 *  接入Infer
 * ......
 
-### 备注
+### 六、备注
 
 ##### GitHub页面无法正常加载图片
 
