@@ -12,28 +12,34 @@
 
 - (id)initWithCoder:(NSCoder *)coder {
     if (self = [super init]) {
-        self.userId = [coder decodeObjectForKey:@"userId"];
-        self.phone = [coder decodeObjectForKey:@"phone"];
-        self.location = [coder decodeObjectForKey:@"location"];
-        self.gender = [coder decodeObjectForKey:@"gender"];
-        self.nickname = [coder decodeObjectForKey:@"nickname"];
-        self.avatar = [coder decodeObjectForKey:@"avatar"];
-        self.token = [coder decodeObjectForKey:@"token"];
-        self.ana = [coder decodeObjectForKey:@"ana"];
+        unsigned int count = 0;
+        Ivar *ivars = class_copyIvarList([self class], &count);
+        for (int i = 0; i < count; i ++) {
+            Ivar ivar = ivars[i];
+            const char *p_name = ivar_getName(ivar);
+            NSString *key = [NSString stringWithCString:p_name encoding:NSUTF8StringEncoding];
+            id value = [coder decodeObjectForKey:key];
+            [self setValue:value forKey:key];
+        }
+        
+        free(ivars);
     }
     
     return self;
 }
 
 - (void)encodeWithCoder:(NSCoder *)coder {
-    [coder encodeObject:self.userId forKey:@"userId"];
-    [coder encodeObject:self.phone forKey:@"phone"];
-    [coder encodeObject:self.location forKey:@"location"];
-    [coder encodeObject:self.gender forKey:@"gender"];
-    [coder encodeObject:self.nickname forKey:@"nickname"];
-    [coder encodeObject:self.avatar forKey:@"avatar"];
-    [coder encodeObject:self.token forKey:@"token"];
-    [coder encodeObject:self.ana forKey:@"ana"];
+    unsigned int count = 0;
+    Ivar *ivars = class_copyIvarList([self class], &count);
+    for (int i = 0; i < count; i ++) {
+        Ivar ivar = ivars[i];
+        const char *p_name = ivar_getName(ivar);
+        NSString *key = [NSString stringWithCString:p_name encoding:NSUTF8StringEncoding];
+        id value = [self valueForKey:key];
+        [coder encodeObject:value forKey:key];
+    }
+    
+    free(ivars);
 }
 
 + (BOOL)supportsSecureCoding {
