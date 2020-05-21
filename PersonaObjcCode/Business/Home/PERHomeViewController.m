@@ -30,7 +30,30 @@
     self.title = @"首页";
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
     self.tableView.backgroundColor = UIColorFromRGB(0xf0f0f0);
+    
+    dispatch_queue_t queue = dispatch_queue_create("net.bujige.testQueue", DISPATCH_QUEUE_CONCURRENT);
+        
+    dispatch_async(queue, ^{
+        self.view.backgroundColor = UIColor.redColor;
+    });
+    
+    [self performSelector:@selector(foo:)];
+    
+    [self addObserver:self forKeyPath:@"name" options:NSKeyValueObservingOptionNew context:nil];
 }
+
++ (BOOL)resolveInstanceMethod:(SEL)sel {
+    if (sel == @selector(foo:)) {//如果是执行foo函数，就动态解析，指定新的IMP
+        class_addMethod([self class], sel, (IMP)fooMethod, "v@:");
+        return YES;
+    }
+    return [super resolveInstanceMethod:sel];
+}
+
+void fooMethod(id obj, SEL _cmd) {
+    NSLog(@"Doing foo");//新的foo函数
+}
+
 
 - (BOOL)shouldShowNavigationBackBarButtonItem {
     return NO;

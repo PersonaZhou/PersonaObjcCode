@@ -74,6 +74,26 @@
     return [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
 }
 
+- (void)storeTest:(NSArray *)array {
+    NSError *error = nil;
+    NSData *data = [NSKeyedArchiver archivedDataWithRootObject:array.copy requiringSecureCoding:NO error:&error];
+    if (data) {
+        [[NSUserDefaults standardUserDefaults] setObject:data forKey:@"1234567890"];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+    }
+}
+
+- (NSArray *)test {
+    NSData *data = [[NSUserDefaults standardUserDefaults] objectForKey:@"1234567890"];
+    if (!data) {
+        return nil;
+    }
+    
+    NSError *error = nil;
+    NSArray *array = [NSKeyedUnarchiver unarchiveObjectWithData:data];
+    return array;
+}
+
 - (void)cleanSession {
     [[NSUserDefaults standardUserDefaults] removeObjectForKey:kUserInfo];
     [[NSUserDefaults standardUserDefaults] removeObjectForKey:kUserToken];

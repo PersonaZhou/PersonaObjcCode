@@ -23,6 +23,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)cleanSession;
 
+- (void)storeTest:(NSArray *)array;
+
+- (NSArray *)test;
+
 @end
 
 NS_ASSUME_NONNULL_END

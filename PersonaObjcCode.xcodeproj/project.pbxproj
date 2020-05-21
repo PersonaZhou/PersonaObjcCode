@@ -90,6 +90,8 @@
 		C15FEA07243222C000A851F1 /* PERRecordModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FEA06243222C000A851F1 /* PERRecordModel.m */; };
 		C15FEA0A24324ED800A851F1 /* UIBarButtonItem+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FEA0924324ED800A851F1 /* UIBarButtonItem+Utility.m */; };
 		C15FEA0D243253F300A851F1 /* WKWebView+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = C15FEA0C243253F300A851F1 /* WKWebView+Utility.m */; };
+		C1A95EAD2476D2D600FB26BA /* PERTest1.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A95EAC2476D2D600FB26BA /* PERTest1.m */; };
+		C1A95EB02476D2E200FB26BA /* PERTest2.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A95EAF2476D2E200FB26BA /* PERTest2.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -279,6 +281,10 @@
 		C15FEA0924324ED800A851F1 /* UIBarButtonItem+Utility.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Utility.m"; sourceTree = "<group>"; };
 		C15FEA0B243253F300A851F1 /* WKWebView+Utility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WKWebView+Utility.h"; sourceTree = "<group>"; };
 		C15FEA0C243253F300A851F1 /* WKWebView+Utility.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "WKWebView+Utility.m"; sourceTree = "<group>"; };
+		C1A95EAB2476D2D600FB26BA /* PERTest1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PERTest1.h; sourceTree = "<group>"; };
+		C1A95EAC2476D2D600FB26BA /* PERTest1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PERTest1.m; sourceTree = "<group>"; };
+		C1A95EAE2476D2E200FB26BA /* PERTest2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PERTest2.h; sourceTree = "<group>"; };
+		C1A95EAF2476D2E200FB26BA /* PERTest2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PERTest2.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -491,6 +497,10 @@
 			children = (
 				C15FE922242FB02800A851F1 /* PERUserModel.h */,
 				C15FE923242FB02800A851F1 /* PERUserModel.m */,
+				C1A95EAB2476D2D600FB26BA /* PERTest1.h */,
+				C1A95EAC2476D2D600FB26BA /* PERTest1.m */,
+				C1A95EAE2476D2E200FB26BA /* PERTest2.h */,
+				C1A95EAF2476D2E200FB26BA /* PERTest2.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -992,6 +1002,7 @@
 				C15FE9A0242FB02900A851F1 /* PERTextureMutilImageNode.m in Sources */,
 				C15FE99A242FB02900A851F1 /* PERMineViewController.m in Sources */,
 				C15FE9BC242FB02900A851F1 /* PERListViewModel.m in Sources */,
+				C1A95EB02476D2E200FB26BA /* PERTest2.m in Sources */,
 				C15FE9E12430F09900A851F1 /* PERTypewriterTextView.m in Sources */,
 				C15FE995242FB02900A851F1 /* PERYogaViewModel.m in Sources */,
 				C15FE990242FB02900A851F1 /* PERHomeViewController.m in Sources */,
@@ -1027,6 +1038,7 @@
 				C15FE9BF242FB02900A851F1 /* PERListViewController.m in Sources */,
 				C15FE9BB242FB02900A851F1 /* PERServices.m in Sources */,
 				C15FE99D242FB02900A851F1 /* PERTextureModel.m in Sources */,
+				C1A95EAD2476D2D600FB26BA /* PERTest1.m in Sources */,
 				C15FE991242FB02900A851F1 /* PERHomeViewModel.m in Sources */,
 				C15FE9B1242FB02900A851F1 /* RACSignal+JSONParser.m in Sources */,
 				C15FE9AA242FB02900A851F1 /* PERLoginViewController.m in Sources */,
